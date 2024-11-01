@@ -1,0 +1,60 @@
+.pg-wrapper .prev,.pg-wrapper .next{
+    visibility: hidden;
+}
+.pg-wrapper .dib,.tab-btn{
+    cursor: pointer
+}
+.pg-wrapper{
+    text-align: center;
+    margin:7px 0;
+}
+.pg-wrapper div{
+    padding: 4px 10px;
+    margin-right:2px;
+    display: inline-block;
+}
+.pg-wrapper .dib:hover,.pg-wrapper .active{
+    background: #E7E7E7
+}
+.pg-wrapper div {
+    margin-right: 2px;
+    padding: 4px 10px;
+}
+.pg-wrapper .dib:hover, .pg-wrapper .active {
+    background: #e7e7e7 none repeat scroll 0 0;
+}
+.f-loading {
+    background-image: url(../image/ajax-loading.gif);
+    background-repeat: no-repeat;
+    background-size: 100px 100px;
+    background-position: 50% 50%;
+    background-color: #FFFFFF;
+    display: block;
+    height: 100%;
+    left: 0;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+}
+.f-text-align-left {
+    text-align: left;
+}
+.f-text-align-right {
+    text-align: right;
+}
+.f-text-align-center {
+    text-align: center;
+}
+.clear{
+    display: block !important;
+    content: "";
+    clear: both;
+}
+#result, #standing{
+    position: relative;
+}
+table.f-condensed tbody tr:hover, table.f-condensed tbody tr.active {
+    background: none repeat scroll 0 0 #e5e5e5;
+}

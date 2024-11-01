@@ -1,0 +1,1 @@
+<?php$message =sprintf(esc_html(__('User %s has requested a withdrawal of %s .Please log into your site to Approve or Decline the request.','victorious')),$username,$mount);?>

@@ -1,0 +1,202 @@
+
+.leaguesHeader
+{
+    float:left;
+    width:770px;
+}
+
+.summary_table
+{
+    float:right;
+}
+
+.flexigrid
+{
+    clear:both;
+}
+
+.message_boxinvite
+{
+    width:490px;
+}
+
+form[name="inviteForm"] input[type="text"]
+{
+    width:300px;
+}
+form[name="inviteForm"] input[type="submit"]
+{
+    width:100px;
+    margin-top:20px;
+}
+
+#js_shoutbox_input
+{
+    width:161px;
+}
+
+#js_block_border_mmavictor_leaguesummarybtns input.button
+{
+    width:148px;
+}
+
+.fighters_table_head font
+{
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 17px;
+}
+
+input[name="emailauth_username"], input[name="emailauth_password"]
+{
+    width:250px;
+}
+select[name="provider_box"]
+{
+    width:70px;
+}
+.results_caption
+{
+    font-size: 15px;
+    font-weight: bold;
+}
+live-scoring-leaderboard {
+    /* margin-bottom: -46px; */
+    float: left;
+    width: 40%;
+    margin: 0;
+    max-height: 500px;
+    overflow-y: auto;
+}
+.score_board {
+    width: 100% !important;
+    margin-top: 10px !important;
+}
+table.f-condensed {
+    margin: 0;
+    line-height: 1.5;
+    table-layout: fixed;
+    background: none repeat scroll 0 0 #f9f9f9;
+    border:none !important;
+    border-top: 1px solid #dfdfdf !important;
+    border-spacing: 0;
+    padding: 0;
+    width: 100%;
+}
+table.f-condensed thead {
+    font-size: 14px;
+}
+table.f-condensed thead tr {
+    background: none repeat scroll 0 0 #f5f5f5;
+    cursor: pointer;
+}
+table.f-condensed thead tr th {
+    font-size: 10px;
+    padding: 0;
+    text-align: center;
+    border-right: 1px solid #dfdfdf;
+    color: #424242;
+    font-weight: bold;
+    padding: 4px 7px;
+    padding: 8px 10px !important;
+    text-align: center;
+    border-bottom: none;
+}
+table.f-condensed thead tr th:last-child {
+    border-right: 0 none;
+}
+table.f-condensed tbody {
+    font-size: 12px;
+}
+table.f-condensed tbody tr{
+    cursor: pointer;
+}
+table.f-condensed tbody tr:nth-of-type(2n+1) {
+    background: none repeat scroll 0 0 #fff;
+}
+table.f-condensed tbody tr:hover, table.f-condensed tbody tr.active {
+    background: none repeat scroll 0 0 #e5e5e5;
+}
+table.f-condensed tbody tr td {
+    padding: 8px 10px !important;
+    color: #000000 !important;
+    text-align: left;
+    border-top: 1px solid #dfdfdf;
+}
+table.f-condensed tbody tr.f-user-highlight {
+    background-color: #f7f7cc;
+}
+table.f-condensed div.f-avatar {
+    display: inline-block;
+    height: 16px;
+    margin: 0 5px 0 3px;
+    vertical-align: middle;
+    width: 16px;
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 500px;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.9);
+    height: 16px;
+    margin: 0 10px 0 0;
+    overflow: hidden;
+    position: relative;
+    text-indent: -9999px;
+    border: 0;
+}
+table.f-condensed .f-truncate {
+    vertical-align: middle;
+    color: #000000;
+    display: inline-block;
+    max-width: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+input, textarea, select, .f-uneditable-input {
+    background-color: #ffffff;
+    border: 1px solid #f-ccc;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    font-size: 14px;
+    padding: 5px 7px 7px !important;
+    transition: all 0.4s linear 0s;
+    width: 100%;
+}
+.table-result .correct{
+    color: green;
+}
+.table-result .incorrect{
+    color: red;
+}
+#result{
+    margin-top: 10px;
+    position: relative;
+}
+#wrapper_standing{
+    position: relative;
+    min-height: 120px;
+}
+.f-loading {
+    background-image: url(../image/ajax-loading.gif);
+    background-repeat: no-repeat;
+    background-size: 100px 100px;
+    background-position: 50% 50%;
+    background-color: #FFFFFF;
+    display: block;
+    height: 100%;
+    left: 0;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+}
+.f-column-12{
+    margin: 0 !important;
+}
+.f-text-align-left{
+    text-align: left !important;
+}
+.f-text-align-center{
+    text-align: center !important;
+}

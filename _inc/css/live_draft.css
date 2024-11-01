@@ -1,0 +1,146 @@
+.rugby-trade-player{
+     background-color: white;
+    min-height: 700px;
+    padding: 10px;
+}
+.rugby-trade-player .right-column,.left-column,.middle-column{
+    display: inline-block;
+}
+.rugby-trade-player .left-column{
+    width:27%;
+}
+.rugby-trade-player .right-column{
+    width:27%;
+}
+.rugby-trade-player .middle-column{
+        width:45%;
+        height: 100%;
+        text-align: center;
+        vertical-align: top ;
+          margin-top: 35px;
+        
+}
+.rugby-trade-player .f-roster-container .f-roster ul li .f-button {
+    color: black;
+}
+.rugby-trade-player .user-position,.target-position,.rugby-icon-transfer{
+    display: inline-block;
+    vertical-align: top;
+}
+.rugby-trade-player .user-position{
+    width: 44%;
+    text-align: left;
+}
+.rugby-trade-player .target-position{
+    width: 44%;
+    text-align: right;
+}
+.rugby-trade-player .target-position section.f-roster{
+    margin-left:20px;
+}
+.rugby-trade-player .rugby-icon-transfer{
+    width: 10%;
+}
+.rugby-trade-player .rugby-icon-transfer{
+    font-size: 40px;
+}
+.rugby-trade-player .middle-column ul,li .f-player,.f-fixture   {
+    font-size: 14px !important;
+}
+.rugby-trade-player .middle-column img,.rugby-trade-player .middle-column .f-no-image{
+/*    width: 40px !important;
+    height:40px !important;*/
+}
+.rugby-trade-player .middle-column .f-player-image{
+   /*background-size: 40px 40px !important;*/
+}
+.rugby-trade-player .middle-column ul li{
+    padding-left: 50px !important;
+    border:none;
+}
+.rugby-trade-player .middle-column .f-roster{
+    /*border:#000 1px solid;*/
+    border: none;
+}
+.rugby-trade-player .f-player{
+    clear: both;
+    padding-top: 0px !important;
+   
+    
+}
+.rugby-trade-player .f-position{
+    text-align: left;
+}
+.rugby-trade-player ul li{
+    min-height: 75px !important;
+}
+.rugby-trade-player .f-position{
+    width: 100%;
+}
+.rugby-trade-player .rugby-message{
+    background: none repeat scroll 0 0 #f7d4d9;
+    color: #c63343;
+    display: none;
+    padding: 5px 0;
+}
+.f-rugby-remove{
+    display: none;
+    color: red !important;
+}
+.rugby-message-success{
+    color: #3c763d;
+    background-color: #dff0d8;
+    padding: 5px 0;
+    display: none;
+}
+
+/*manage trade request page*/
+#rugby-manage-trade-player-page{
+    background-color: white;
+    min-height: 300px;
+    padding:20px;
+}
+#rugby-manage-trade-player-page .request-content,#rugby-manage-trade-player-page .request-handle{
+    display: inline-block;
+
+}
+#rugby-manage-trade-player-page .request-content{
+    width: 60%;
+}
+#rugby-manage-trade-player-page .request-handle{
+    width: 38%;
+    text-align: left;
+    vertical-align: top;
+}
+#rugby-manage-trade-player-page .request-handle .btn-approve-trade{
+    margin-left: 20px;
+}
+
+#rugby-manage-trade-player-page .request-item{
+    border-bottom: 1px solid grey;
+    margin-bottom: 5px;
+    padding-bottom: 10px;
+}
+
+#rugby-manage-trade-player-page .rugby-message-error{
+    display: none;
+      background: none repeat scroll 0 0 #f7d4d9;
+    color: #c63343;
+    display: none;
+    padding: 5px 0;
+    margin-bottom: 10px;
+}
+#rugby-manage-trade-player-page .rugby-message-success{
+     margin-bottom: 10px;
+}
+.trade_request_list{
+    background-position: left top !important;
+    height: 150px !important;
+    padding: 0 !important;
+}
+.trade_request_list .f-player-image{
+    top:0;
+}
+.trade_request_list .f-fixture{
+    text-align: left;
+}

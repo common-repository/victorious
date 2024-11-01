@@ -1,0 +1,11 @@
+
+.victorious-body .entry-content > *{
+    max-width: 100%!important;
+}
+@media only screen and (min-width: 768px){
+    .victorious-body .entry .entry-content, 
+    .victorious-body.entry .entry-summary {
+        max-width: 100%;
+        margin: 0 1rem;
+    }
+}

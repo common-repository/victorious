@@ -1,0 +1,2 @@
+<?php
+$message_body .= sprintf(esc_html(__('You didn\'t change player for contest \'%s\' so that system automatically picked player for you. Here is your list:', 'victorious')), $data['league_name']).'<br>';

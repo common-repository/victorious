@@ -1,0 +1,1 @@
+<?phpsprintf(esc_html(__('Please pick for new week %s:', 'victorious')), '<a href="'.VICTORIOUS_URL_SUBMIT_PICKS.$league['leagueID'].'">'.__("here",'victorious').'</a>').'<br>';?>

@@ -1,0 +1,247 @@
+.site{
+    max-width: 1200px;
+}
+.entry-content{
+    background-color: #FFFFFF !important;
+    padding: 10px !important;
+}
+.bracket_image{
+    margin: auto;
+    width: 800px;
+    float: left;
+    position: relative;
+}
+.bracket_image img{
+    width: 100%;
+}
+.group_left{
+    width: 190px;
+    float: left;
+    padding-right: 10px;
+    /*padding-top: 15px;*/
+}
+.group_right{
+    width: 190px;
+    float: left;
+    padding-left: 10px;
+    /*padding-top: 15px;*/
+}
+.group_item{
+    list-style: none;
+    padding: 10px 0;
+    height: 160px;
+    margin: 0;
+}
+.group_item li:after{
+    content: "";
+    clear: both;
+    float: none;
+}
+.group_item li{
+    margin-bottom: 3px;
+}
+.group_item li:last-child{
+    margin-bottom: 0;
+}
+.group_item li.selected{
+    background-color: #DDDDDD;
+}
+.group_item .group_name{
+    font-weight: bold;
+}
+.group_item .item_action{
+    float: right;
+    width: 20px;
+    height: 20px;
+}
+.group_item .item_action .item_action_button{
+    cursor: pointer;
+    font-size: 20px;
+    text-decoration: none;
+}
+.group_item .item_action .item_action_add{
+    color: #7ab800;
+}
+.group_item .item_action .item_action_remove{
+    color: #e22b00;
+}
+.group_item .item_action .item_action_button i{
+    display: block;
+}
+.group_left_16{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 9px;
+    width: 132px;
+}
+.group_right_16{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-top: 9px;
+    text-align: right;
+    width: 132px;
+}
+.group_item_16{
+    height: auto;
+    margin-bottom: -9px;
+}
+.group_item_16:last-child{
+    margin-bottom: 0;
+}
+.group_item_16 li{
+    margin-bottom: 76px;
+}
+.group_item_16 li:last-child{
+    margin-bottom: 0;
+}
+.group_left_8{
+    position: absolute;
+    top: 0;
+    left: 135px;
+    width: 98px;
+    padding-top: 44px;
+}
+.group_right_8{
+    position: absolute;
+    top: 0;
+    right: 135px;
+    width: 98px;
+    padding-top: 44px;
+    text-align: right;
+}
+.group_item_8{
+    height: auto;
+    margin-bottom: 64px;
+}
+.group_item_8:last-child{
+    margin-bottom: 0;
+}
+.group_item_8 li{
+    margin-bottom: 148px;
+}
+.group_item_8 li:last-child{
+    margin-bottom: 0;
+}
+.group_left_4{
+    position: absolute;
+    top: 0;
+    left: 235px;
+    width: 100px;
+    padding-top: 113px;
+}
+.group_right_4{
+    position: absolute;
+    top: 0;
+    right: 235px;
+    width: 100px;
+    padding-top: 113px;
+    text-align: right;
+}
+.group_item_4{
+    height: auto;
+}
+.group_item_4 li{
+    margin-bottom: 297px;
+}
+.group_item_4 li:last-child{
+    margin-bottom: 0;
+}
+.group_left_2{
+    position: absolute;
+    top: 0;
+    left: 285px;
+    padding-top: 275px;
+}
+.group_right_2{
+    position: absolute;
+    top: 0;
+    right: 285px;
+    padding-top: 275px;
+    text-align: right;
+}
+.group_item_2{
+    height: auto;
+}
+.group_1st{
+    position: absolute;
+    top: 345px;
+    left: 0;
+    right: 0;
+    width: 100px;
+    margin: auto;
+    text-align: center;
+}
+.group_3rd{
+    position: absolute;
+    top: 480px;
+    left: 300px;
+    width: 100px;
+    margin: auto;
+    text-align: center;
+}
+.button{
+    background-image: -ms-linear-gradient(top, #65B126 0%, #49960B 100%);
+    background-image: -moz-linear-gradient(top, #65B126 0%, #49960B 100%);
+    background-image: -o-linear-gradient(top, #65B126 0%, #49960B 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #65B126), color-stop(1, #49960B));
+    background-image: -webkit-linear-gradient(top, #65B126 0%, #49960B 100%);
+    background-image: linear-gradient(to bottom, #65B126 0%, #49960B 100%);
+    border-radius: 2px;
+    border: 1px solid #3D770E;
+    font-weight: bold;
+    padding: 3px 8px;
+    font-size: 12px;
+}
+.button:hover{
+    background: #65B126;
+    outline: none;
+}
+.league_info{
+    background: none repeat scroll 0 0 #eaeaea;
+    border-radius: 3px;
+    font-size: 14px;
+    margin-bottom: 11px;
+    padding: 6px 0;
+}
+.league_info .column_4{
+    float: left;
+    margin: 0 1.04167%;
+    position: relative;
+    width: 31.25%;
+}
+.league_info .column_2{
+    float: left;
+    margin: 0 1.04167%;
+    position: relative;
+    width: 14.5833%;
+}
+.league_info .column_3{
+    float: left;
+    margin: 0 1.04167%;
+    position: relative;
+    width: 22.9167%;
+}
+.league_info:after{
+    clear: both;
+    content: "";
+    display: block;
+}
+.league_info .link {
+    color: #0b73a4;
+    cursor: pointer;
+    vertical-align: top;
+}
+.league_info .text_right{
+    text-align: right;
+}
+#result_detail{
+    margin-top: 30px;
+    min-height: 200px;
+    position: relative;
+}
+#result_rank{
+    min-height: 200px;
+    position: relative;
+}

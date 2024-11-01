@@ -1,0 +1,1 @@
+<?php if($users != null):?>    <select id="userDraftRoom" onchange="jQuery.livedraft.liveDraftSeeUserLineup()">    <?php foreach($users as $user):?>        <option value="<?php echo esc_attr($user['userID']);?>">            <?php echo esc_html($user['username']);?>        </option>    <?php endforeach;?>    </select><?php endif; ?>

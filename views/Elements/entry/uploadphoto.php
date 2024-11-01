@@ -1,0 +1,1 @@
+<?php     $link = VICTORIOUS_URL_CONTEST.$league['leagueID'].'/?num='.$entry_number;    echo sprintf(esc_html(__('Thanks for joining "%s" contest, Please go to %s after you end game','victorious')), $league['name'], '<a href="'.$link.'">'.esc_html(__('update your result','victorious')).'</a>');?>

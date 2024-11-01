@@ -1,0 +1,1 @@
+<input type="hidden" name="gateway" value="<?php echo VICTORIOUS_GATEWAY_PAYPAL;?>" />

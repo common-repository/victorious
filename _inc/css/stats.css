@@ -1,0 +1,221 @@
+#fsbox form > div{
+    margin-bottom: 6px;
+}
+.loading{
+    border: 2px solid orange;
+}
+.page-item{
+    display: inline-block;
+    color:#3d7db3;
+}
+.page-item.active{ 
+    color: #737A7D !important;
+}
+/*.page-item:after{
+content: '';
+display: inline-block;
+width: 100%;
+}*/
+.hide{
+    display: none;
+}
+
+.pg-wrapper .prev,.pg-wrapper .next{
+    visibility: hidden;
+}
+.pg-wrapper .page-item,.tab-btn{
+    cursor: pointer
+}
+.tab-wrapper,.pg-wrapper,.filter-wrapper,.tbl-wrapper,#emptybox{
+    background: #eee;
+}
+.filter-wrapper{
+    padding:15px;
+}
+.pg-wrapper{
+    text-align: center;
+    margin:7px 0;
+}
+.pg-wrapper div{
+    padding: 4px 10px;
+    margin-right:2px;
+}
+.pg-wrapper .page-item:hover,.pg-wrapper .active{
+    background: #E7E7E7
+}
+
+.tbl-wrapper{
+    overflow-x: auto;
+}
+.tbl-wrapper th{
+    padding: 0 2px;
+    border:none;
+    width: 97px;
+    text-transform: capitalize;
+    cursor: pointer;
+    font-size:13px;
+    vertical-align: middle;
+    background-color: #ECECEC;
+}
+.tbl-wrapper thead{
+    background: #ececec none repeat scroll 0 0;
+}
+.tbl-wrapper th:hover{
+    text-decoration: underline;
+}
+.tbl-wrapper tr{
+    margin: 0;
+    padding: 0;
+    vertical-align:middle;
+}
+.tbl-wrapper tbody{
+    /*		border-top:solid 1px #ADADAD;*/
+}
+
+.tbl-wrapper th:first-child{
+    /*		width:20%;*/
+}
+.tbl-wrapper th:first-child, .tbl-wrapper td:first-child{
+    text-align: left;
+    padding: 0 5px;
+}
+.tbl-wrapper td{
+    min-width: 100px;
+    vertical-align:middle;
+    text-align: center;
+}
+.tbl-wrapper td:first-child{
+    color:#3D7DB3;
+    padding: 2px 5px;
+}
+.tbl-wrapper table{
+    border:none;
+    border-spacing:0;
+    width: 0;
+}
+.tbl-wrapper .frozen{
+    left: 0;
+    position: absolute;
+    top: auto;
+    z-index: 22;
+}
+.tbl-wrapper th:nth-child(2), .tbl-wrapper td:nth-child(2){
+    left: 200px;
+}
+.tbl-wrapper th:nth-child(3), .tbl-wrapper td:nth-child(3){
+    left: 297px;
+}
+th{
+    text-align: center;
+}
+.entry-content table{
+    margin: 0px;
+}
+.entry-content td{
+    padding: 2px;
+    text-align: center;
+    border:none;
+}
+.tbl-wrapper .tr0 td{
+    background: #fff
+}
+.tbl-wrapper .tr1 td{
+    background: #ECECEC;
+}
+
+.tab-wrapper{
+    padding-bottom: 3px;
+}
+.tab-btn{
+    padding: 0 8px;
+    margin-right: 2px;
+    border-left: 1px solid #f0f0f0;
+    border-top: 1px solid #ddd;
+    border-right: 2px solid #bbb;
+    border-bottom: none;
+    color: #fff;
+    background: #000;
+    cursor: pointer;
+}
+.tab-wrapper .active{
+    background: #eee;
+    color: #000
+}
+.outerdiv {
+    left: 0;
+    position: absolute;
+    right: 370px;
+    top: 0;
+}
+.innerdiv {
+    margin-left: 370px;
+    overflow-x: scroll;
+    overflow-y: visible;
+    padding-bottom: 1px;
+    width: 100%;
+}
+#wrap_outerdiv{
+    background: #ececec none repeat scroll 0 0;
+    position: relative;
+    min-height: 560px;
+}
+.info_item{
+    display: inline-block;
+}
+.no-data{
+    text-align: center;
+    padding: 7px;
+}
+#stats_data{
+    position: relative;
+}
+.f-loading {
+    background-image: url('../image/ajax-loading.gif');
+    background-repeat: no-repeat;
+    background-size: 100px 100px;
+    background-position: 50% 50%;
+    background-color: #FFFFFF;
+    display: block;
+    height: 100%;
+    left: 0;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+}
+#stats-table th, #stats-table td{
+    padding: 5px;
+}
+#stats-table th, #stats-table td{
+    text-align: left;
+}
+#stats-table th{
+    cursor: pointer;
+}
+#stats-table th:hover{
+    text-decoration: underline;
+}
+#stats-table th i{
+    float: right;
+    margin-top: 4px;
+    width: 8px;
+    height: 8px;
+}
+#stats-table th i.fa-sort-up{
+    margin-top: 9px;
+}
+@media (max-width:468px){
+    .col_position, .col_team{
+            display:none;
+    }
+    .outerdiv{
+            right:200px !important;
+    }
+    .innerdiv{
+            margin-left: 200px !important;
+    }
+    .mobile_player_info{
+            display:block;
+    }
+}

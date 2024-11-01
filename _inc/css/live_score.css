@@ -1,0 +1,3360 @@
+@font-face {
+    font-family: 'flexslider-icon';
+    src: url('fonts/flexslider-icon.eot');
+    src: url('fonts/flexslider-icon.eot?#iefix') format('embedded-opentype'), url('fonts/flexslider-icon.woff') format('woff'), url('fonts/flexslider-icon.ttf') format('truetype'), url('fonts/flexslider-icon.svg#flexslider-icon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+#standings .team-container{
+    display:inline-block;
+    height:35px
+}
+#standings .team-container img{
+    background:transparent;
+    display:inline-block;
+    vertical-align:middle
+}
+#standings .team-container span{
+    vertical-align:middle
+}
+.standings-tabs{
+    padding:0 !important;
+    position:relative
+}
+.standings-container{
+    padding:0 !important;
+    padding-top:10px !important;
+    -moz-user-select:-moz-none;
+    -ms-user-select:none;
+    -webkit-user-select:none;
+    user-select:none
+}
+.standings-container .standings-chart thead tr{
+    background-color:#dcdee0 !important
+}
+.standings-container:first-child{
+    padding:0
+}
+.standings-container h4{
+    font-family:"Arial",sans-serif;
+    color:#fff
+}
+.standings-container a{
+    color:#333
+}
+.standings-container .standings-league{
+    background-color:#b90a0a;
+    border-bottom:5px solid #fff;
+    height:33px
+}
+.standings-container .standings-league h4{
+    display:inline-block;
+    margin:6px 10px;
+    height:20px
+}
+.standings-container .standings-division-header{
+    background-color:#323232;
+    padding:7px 10px;
+    border-bottom:1px solid #fff;
+    text-transform:uppercase
+}
+.standings-container .standings-divisions-container{
+    opacity:1;
+    overflow:hidden
+}
+.standings-container .active{
+    display:block;
+    opacity:1
+}
+.standings-container .standings-chart,.standings-container .standings-legend-chart{
+    border-collapse:collapse;
+    font-family:Arial,Sans-Serif;
+    font-size:13px;
+    color:#323232;
+    text-align:center
+}
+.standings-container .standings-chart td:last-child,.standings-container .standings-legend-chart td:last-child{
+    border-right:0
+}
+.standings-container .standings-chart tr,.standings-container .standings-legend-chart tr{
+    border:0
+}
+.standings-container .standings-chart tr .rank-value,.standings-container .standings-legend-chart tr .rank-value{
+    width:24px
+}
+.standings-container .standings-chart tr .team-value,.standings-container .standings-legend-chart tr .team-value{
+    width:145px
+}
+.standings-container .standings-chart tr .team-value a:hover,.standings-container .standings-legend-chart tr .team-value a:hover{
+    text-decoration:none
+}
+.standings-container .standings-chart tr .team-value a:hover span,.standings-container .standings-legend-chart tr .team-value a:hover span{
+    text-decoration:underline
+}
+.standings-container .standings-chart tr .team-value .logo,.standings-container .standings-legend-chart tr .team-value .logo{
+    display:inline-block;
+    vertical-align:middle;
+    margin-right:5px;
+    width:24px;
+    height:24px
+}
+.standings-container .standings-chart tr .team-value .logo.logo-flags,.standings-container .standings-legend-chart tr .team-value .logo.logo-flags{
+    height:14px
+}
+.standings-container .standings-chart th.col-1,.standings-container .standings-legend-chart th.col-1{
+    min-width:25px
+}
+.standings-container .standings-chart .col-titles,.standings-container .standings-legend-chart .col-titles{
+    background-color:#dcdee0
+}
+.standings-container .standings-chart .team,.standings-container .standings-chart .mobile,.standings-container .standings-chart .desktop,.standings-container .standings-chart tr td:nth-child(2),.standings-container .standings-legend-chart .team,.standings-container .standings-legend-chart .mobile,.standings-container .standings-legend-chart .desktop,.standings-container .standings-legend-chart tr td:nth-child(2){
+    text-align:left
+}
+.standings-container .standings-chart .mobile,.standings-container .standings-legend-chart .mobile{
+    display:none;
+    visibility:hidden
+}
+.standings-container .standings-chart .mobile .logo,.standings-container .standings-legend-chart .mobile .logo{
+    margin-right:5px
+}
+.standings-container .standings-title{
+    background-color:#323232;
+    color:#fff;
+    padding:7px 10px;
+    border-bottom:1px solid #fff
+}
+.mls-standings-1 .standings-chart tr .team-value{
+    min-width:40px;
+    width:auto
+}
+.mls-standings-1 .red-line{
+    border-bottom:2px solid #b90a0a !important
+}
+.mls-standings-1 .red-line .stick.col-1,.mls-standings-1 .red-line .stick.col-2{
+    border-bottom:2px solid #b90a0a !important
+}
+@media only screen and (max-width: 1000px) and (min-width: 768px){
+    .stats-page{
+        display:none;
+        visibility:hidden
+    }
+}
+@media only screen and (max-width: 767px){
+    .stats-page{
+        display:block;
+        visibility:visible
+    }
+    .team-value .desktop{
+        display:none
+    }
+    .standings-container .standings-chart tr .team-value{
+        min-width:40px;
+        width:auto
+    }
+    .standings-container .standings-chart tr .team-value .mobile{
+        display:inline-block;
+        visibility:visible;
+        text-transform:uppercase
+    }
+    .standings-container .standings-chart tr .team-value .mobile span{
+        text-transform:none
+    }
+    .stats-table .stats-table-container .arrow{
+        display:none
+    }
+}
+#injuries .no-injuries,#teaminjuries .no-injuries{
+    text-align:center;
+    font:19px "Pill-Gothic-Bold",Arial,sans-serif;
+    display:none
+}
+#injuries .detail-cells td,#teaminjuries .detail-cells td{
+    border-right:1px solid #dcdee0
+}
+#injuries .description,#teaminjuries .description{
+    background-color:#f0f1f2
+}
+#injuries .first,#teaminjuries .first{
+    text-align:left
+}
+#injuries .mobile-description,#teaminjuries .mobile-description{
+    display:none;
+    background-color:#f0f1f2
+}
+#injuries .mobile-description td,#teaminjuries .mobile-description td{
+    padding:7px 10px;
+    text-align:left
+}
+#injuries h4 a,#teaminjuries h4 a{
+    color:#fff
+}
+#injuries tbody.odd .detail-cells{
+    background-color:#f0f1f2
+}
+#injuries tbody.odd .detail-cells{
+    background-color:#fff
+}
+#injuries .injuries-report{
+    margin-bottom:20px
+}
+#injuries .injuries-report .detail-cells td:first-child{
+    width:28%
+}
+#injuries .injuries-report .detail-cells td:first-child span{
+    display:inline
+}
+#injuries .injuries-report .detail-cells td:nth-child(2),#injuries .injuries-report .detail-cells td:nth-child(3){
+    width:17%
+}
+#teaminjuries .detail-cells{
+    border-bottom:1px solid #dcdee0
+}
+#teaminjuries .detail-cells:nth-child(even){
+    background-color:#fff
+}
+#teaminjuries .detail-cells td{
+    border-right:1px solid #dcdee0
+}
+#teaminjuries .detail-cells .profile-img{
+    padding:0px;
+    vertical-align:bottom;
+    width:10%
+}
+#teaminjuries .detail-cells .profile-img img{
+    vertical-align:bottom;
+    width:61px;
+    height:61px
+}
+#teaminjuries .description{
+    border-bottom:1px solid #dcdee0;
+    background-color:#f0f1f2
+}
+#teaminjuries .stats-copyright{
+    margin-top:20px
+}
+@media screen and (max-width: 888px){
+    #injuries .detail-cells td:first-child{
+        width:25%
+    }
+    #injuries .detail-cells td:first-child span{
+        display:block
+    }
+    #injuries .detail-cells td:last-child{
+        width:30%
+    }
+    #injuries .detail-cells .last{
+        width:30%
+    }
+}
+@media screen and (max-width: 862px){
+    #injuries .detail-cells{
+        background-color:#fff
+    }
+    #injuries .detail-cells td:first-child span{
+        display:block
+    }
+}
+@media screen and (max-width: 824px){
+    #injuries .last{
+        display:none
+    }
+    #injuries .headers th:nth-child(3){
+        border-right:1px solid #dcdee0
+    }
+    #injuries .detail-cells:nth-child(4n){
+        background-color:#fff
+    }
+    #injuries .detail-cells td:first-child{
+        width:40%
+    }
+    #injuries .detail-cells td:first-child span{
+        display:inline
+    }
+    #injuries .detail-cells td:nth-child(3){
+        border-right:1px solid #dcdee0
+    }
+    #injuries .mobile-description{
+        display:table-row
+    }
+    #injuries tbody .detail-cells:nth-child(odd){
+        background-color:#fff
+    }
+    #teaminjuries .profile-img{
+        display:none
+    }
+}
+@media screen and (max-width: 767px){
+    #injuries .last{
+        display:none
+    }
+    #injuries .headers th:nth-child(3){
+        border-right:1px solid #dcdee0
+    }
+    #injuries .detail-cells:nth-child(4n){
+        background-color:#fff
+    }
+    #injuries .detail-cells td:first-child{
+        width:40%;
+        padding:7px 0px 7px 10px
+    }
+    #injuries .detail-cells td:nth-child(2){
+        padding-left:5px
+    }
+    #injuries .detail-cells td:nth-child(3){
+        border-right:1px solid #dcdee0
+    }
+    #injuries .mobile-description{
+        display:table-row
+    }
+}
+@media screen and (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5), (min-resolution: 96dpi), (min-resolution: 1.5dppx){
+    #teaminjuries img{
+        width:61px
+    }
+}
+.division-nav{
+    margin-bottom:20px
+}
+#teams #AL,#teams #NL{
+    display:none
+}
+#teams .ui-tabs-panel{
+    padding:0px !important
+}
+#teams .team-container{
+    padding:10px 0px 13px 15px;
+    border-right:1px solid #dcdee0;
+    border-left:1px solid #dcdee0
+}
+#teams .team-container.even{
+    background-color:#f0f1f2
+}
+#teams .team-container.last{
+    border-bottom:1px solid #dcdee0
+}
+#teams .team-container .logo,#teams .team-container .team-name{
+    vertical-align:middle
+}
+#teams .team-container .logo{
+    display:inline-block;
+    width:40px;
+    height:40px;
+    margin-right:7px
+}
+#teams .team-container a:hover{
+    text-decoration:none
+}
+#teams .team-container a span:hover{
+    text-decoration:underline
+}
+#teams .team-container .team-mini-nav{
+    margin:0px 0px 0px 0px;
+    height:20px
+}
+#teams .team-container .team-mini-nav li{
+    float:left;
+    content:" |";
+    display:table;
+    margin-right:7px
+}
+#teams .team-container .team-mini-nav li a{
+    font-family:Trebuchet,Arial,sans-serif;
+    font-size:13px;
+    font-weight:bold;
+    color:#86878c
+}
+#teams .team-container .team-mini-nav li a:hover{
+    color:#333;
+    text-decoration:underline
+}
+#teams .team-container .team-mini-nav li .div{
+    margin-left:7px;
+    font-family:Arial;
+    font-size:13px;
+    color:#86878c
+}
+#teams .team-container .team-name{
+    color:#323232;
+    text-transform:uppercase;
+    font-size:17px
+}
+#teams .division-container{
+    margin-bottom:5px;
+    border-bottom:1px solid #dcdee0
+}
+#teams .division-container .stats-table-header{
+    margin-top:5px
+}
+#teams .league-header{
+    background-color:#b90a0a;
+    color:#fff;
+    height:30px
+}
+#teams .league-header h4{
+    display:inline-block;
+    padding:7px 10px;
+    text-transform:uppercase;
+    font-family:Arial,sans-serif;
+    font-size:13px;
+    font-weight:bold
+}
+#teams .stats-copyright{
+    margin-top:20px
+}
+#teams .conference{
+    margin-bottom:5px
+}
+@media screen and (max-width: 822px){
+    #teams .team-container .team-mini-nav{
+        height:40px
+    }
+}
+.players-list{
+    margin-bottom:20px
+}
+.players-list .stats-copyright{
+    margin-top:20px
+}
+#players-chart th:first-child{
+    display:none
+}
+#players-chart td:nth-child(2){
+    text-transform:uppercase;
+    text-align:center;
+    border-right:1px solid #dcdee0;
+    padding-left:0px;
+    width:30%;
+    min-width:120px
+}
+#players-chart tr{
+    height:34px
+}
+#players-chart tbody td{
+    padding:5px 0px 5px 10px
+}
+#players-chart tbody td .logo{
+    display:inline-block;
+    width:24px;
+    height:24px;
+    margin-right:5px
+}
+#players-chart tbody .team-name{
+    text-transform:uppercase;
+    text-align:center;
+    border-right:1px solid #dcdee0;
+    padding-left:0px;
+    width:30%;
+    min-width:120px
+}
+#players-chart tbody .team-name a{
+    color:#333
+}
+#players-chart tbody .team-name .logo,#players-chart tbody .team-name strong{
+    vertical-align:middle
+}
+#transactions{
+    position:relative
+}
+#transactions .no-transactions{
+    display:none;
+    text-align:center
+}
+#transactions .trans-date{
+    margin-bottom:20px
+}
+#transactions .trans-date .transaction-date th{
+    text-align:left;
+    padding:10px
+}
+#transactions .trans-date .transaction-date .detail-cells a{
+    color:#333;
+    text-decoration:none
+}
+#transactions .trans-date .transaction-date .detail-cells a span:hover{
+    text-decoration:underline
+}
+#transactions .trans-date .transaction-date .detail-cells span a:hover{
+    text-decoration:underline
+}
+#transactions .trans-date .transaction-date .detail-cells td{
+    text-align:left
+}
+#transactions .trans-date .transaction-date .detail-cells td .logo,#transactions .trans-date .transaction-date .detail-cells td span{
+    vertical-align:middle
+}
+#transactions .trans-date .transaction-date .detail-cells td .logo{
+    display:inline-block;
+    width:24px;
+    height:24px;
+    margin-right:5px
+}
+#transactions .trans-date .transaction-date .detail-cells td .team-mobile{
+    display:none
+}
+#transactions .trans-date .transaction-date .detail-cells td .team-desktop{
+    display:inline-block
+}
+#transactions .trans-date .transaction-date .detail-cells td .player-name span{
+    vertical-align:baseline
+}
+#transactions .trans-date .transaction-date .detail-cells td:first-child{
+    width:34%
+}
+#transactions .trans-date .transaction-date .detail-cells td:first-child{
+    border-right:1px solid #dcdee0
+}
+#teamtransactions .transaction-month{
+    margin-bottom:20px
+}
+#teamtransactions th{
+    text-align:left;
+    padding:7px 10px
+}
+#teamtransactions th:first-child{
+    text-align:center
+}
+#teamtransactions .detail-cells td{
+    text-align:left;
+    padding:13px 10px
+}
+#teamtransactions .detail-cells td:first-child{
+    text-align:center;
+    border-right:1px solid #dcdee0;
+    width:18%;
+    min-width:108px
+}
+#teamtransactions .detail-cells td a{
+    text-decoration:none
+}
+#teamtransactions .detail-cells td a span:hover{
+    text-decoration:underline
+}
+#teamtransactions .no-teamtransactions{
+    display:none
+}
+@media screen and (max-width: 967px){
+    #transactions .trans-date .transaction-date .detail-cells td:first-child{
+        width:30%
+    }
+    #transactions .trans-date .transaction-date .detail-cells td .team-mobile{
+        display:inline-block;
+        text-transform:uppercase
+    }
+    #transactions .trans-date .transaction-date .detail-cells td .team-desktop{
+        display:none
+    }
+    #transactions .trans-date .transaction-date .detail-cells td .team-desktop strong{
+        display:none
+    }
+}
+#schedule{
+    position:relative;
+    -moz-user-select:-moz-none;
+    -ms-user-select:none;
+    -webkit-user-select:none;
+    user-select:none
+}
+#schedule .league-schedule .game-date,#schedule .team-schedule .game-date{
+    margin-bottom:20px
+}
+#schedule .league-schedule .game-date .schedule-date,#schedule .team-schedule .game-date .schedule-date{
+    table-layout:auto
+}
+#schedule .league-schedule .game-date .schedule-date .headers th:first-child,#schedule .team-schedule .game-date .schedule-date .headers th:first-child{
+    text-align:center
+}
+#schedule .league-schedule .game-date .schedule-date .detail-cells,#schedule .team-schedule .game-date .schedule-date .detail-cells{
+    height:0;
+    color:#323232;
+    border-left:1px solid #dcdee0
+}
+#schedule .league-schedule .game-date .schedule-date .detail-cells a,#schedule .team-schedule .game-date .schedule-date .detail-cells a{
+    color:#323232
+}
+#schedule .league-schedule .game-date .schedule-date .detail-cells td,#schedule .team-schedule .game-date .schedule-date .detail-cells td{
+    text-align:center;
+    padding:5px 0
+}
+#schedule .league-schedule .game-date .schedule-date .detail-cells td a,#schedule .team-schedule .game-date .schedule-date .detail-cells td a{
+    line-height:24px
+}
+#schedule .league-schedule .game-date .schedule-date .detail-cells td a:hover,#schedule .team-schedule .game-date .schedule-date .detail-cells td a:hover{
+    text-decoration:none
+}
+#schedule .league-schedule .game-date .schedule-date .detail-cells td a:hover strong,#schedule .team-schedule .game-date .schedule-date .detail-cells td a:hover strong{
+    text-decoration:underline
+}
+#schedule .league-schedule .game-date .schedule-date .detail-cells td span.winner,#schedule .team-schedule .game-date .schedule-date .detail-cells td span.winner{
+    font-weight:bold
+}
+#schedule .league-schedule .game-date .schedule-date .detail-cells td span .city-long,#schedule .team-schedule .game-date .schedule-date .detail-cells td span .city-long{
+    display:inline-block
+}
+#schedule .league-schedule .game-date .schedule-date .detail-cells td span .city-short,#schedule .team-schedule .game-date .schedule-date .detail-cells td span .city-short{
+    text-transform:uppercase;
+    display:none
+}
+#schedule .league-schedule .game-date .schedule-date .detail-cells td span .logo,#schedule .team-schedule .game-date .schedule-date .detail-cells td span .logo{
+    display:inline-block;
+    vertical-align:top;
+    width:24px;
+    height:24px;
+    margin:0 10px
+}
+#schedule .league-schedule .game-date .schedule-date .detail-cells td span .logo.logo-flags,#schedule .team-schedule .game-date .schedule-date .detail-cells td span .logo.logo-flags{
+    height:14px;
+    margin-top:2px
+}
+#schedule .league-schedule .game-date .schedule-date .detail-cells td:first-child,#schedule .league-schedule .game-date .schedule-date .detail-cells td.away,#schedule .team-schedule .game-date .schedule-date .detail-cells td:first-child,#schedule .team-schedule .game-date .schedule-date .detail-cells td.away{
+    width:auto;
+    text-align:left;
+    width:24%
+}
+#schedule .league-schedule .game-date .schedule-date .detail-cells td:nth-child(2),#schedule .team-schedule .game-date .schedule-date .detail-cells td:nth-child(2){
+    min-width:50px
+}
+#schedule .league-schedule .game-date .schedule-date .detail-cells td:nth-child(3),#schedule .team-schedule .game-date .schedule-date .detail-cells td:nth-child(3){
+    text-align:right;
+    width:24%;
+    border-right:1px solid #dcdee0
+}
+#schedule .league-schedule .game-date .schedule-date .detail-cells td.home,#schedule .team-schedule .game-date .schedule-date .detail-cells td.home{
+    text-align:right;
+    width:24%;
+    border-right:1px solid #dcdee0
+}
+#schedule .league-schedule .game-date .schedule-date .detail-cells td.home span .logo,#schedule .team-schedule .game-date .schedule-date .detail-cells td.home span .logo{
+    margin:0 10px 0 8px
+}
+#schedule .league-schedule .game-date .schedule-date .detail-cells td.home span .logo.logo-flags,#schedule .team-schedule .game-date .schedule-date .detail-cells td.home span .logo.logo-flags{
+    margin-top:2px
+}
+#schedule .league-schedule .game-date .schedule-date .detail-cells .game-detail,#schedule .team-schedule .game-date .schedule-date .detail-cells .game-detail{
+    width:270px
+}
+#schedule .league-schedule .game-date .schedule-date .detail-cells .game-detail a,#schedule .team-schedule .game-date .schedule-date .detail-cells .game-detail a{
+    color:#323232
+}
+#schedule .league-schedule .game-date .schedule-date .detail-cells .game-detail .game-page:after,#schedule .team-schedule .game-date .schedule-date .detail-cells .game-detail .game-page:after{
+    content:""
+}
+#schedule .league-schedule .game-date .schedule-date .detail-cells .game-detail .game-time:after,#schedule .team-schedule .game-date .schedule-date .detail-cells .game-detail .game-time:after{
+    content:"|"
+}
+#schedule .league-schedule .game-date .schedule-date .detail-cells .game-detail .game-time.no-content:after,#schedule .team-schedule .game-date .schedule-date .detail-cells .game-detail .game-time.no-content:after{
+    content:""
+}
+#schedule .league-schedule .game-date .schedule-date .detail-cells .game-detail .game-tracker:before,#schedule .team-schedule .game-date .schedule-date .detail-cells .game-detail .game-tracker:before{
+    content:"| ";
+    text-decoration:none
+}
+#schedule .league-schedule .game-date .schedule-date .detail-cells .channel,#schedule .team-schedule .game-date .schedule-date .detail-cells .channel{
+    color:#b90a0a;
+    font-weight:bold
+}
+#schedule .league-schedule .game-date .schedule-date .detail-cells .game-detail.live .game-page:after,#schedule .team-schedule .game-date .schedule-date .detail-cells .game-detail.live .game-page:after{
+    content:""
+}
+#schedule .league-schedule .game-date .schedule-date .detail-cells .game-detail.final .game-page:after,#schedule .team-schedule .game-date .schedule-date .detail-cells .game-detail.final .game-page:after{
+    content:""
+}
+#schedule .league-schedule .game-date .schedule-date .mobile-cells,#schedule .team-schedule .game-date .schedule-date .mobile-cells{
+    display:none
+}
+#schedule .no-games-found{
+    display:none;
+    text-align:center;
+    font:19px "Pill-Gothic-Bold",Arial,sans-serif
+}
+#schedule .no-games-today{
+    display:none;
+    text-align:center
+}
+#schedule .league-schedule .game-date .schedule-date .detail-cells td.away,#schedule .league-schedule .game-date .schedule-date .detail-cells td.state{
+    border-right:0
+}
+#schedule .team-schedule .game-date .schedule-date .detail-cells{
+    height:49px
+}
+#schedule .team-schedule .game-date .schedule-date .detail-cells td span .city-short.mobile{
+    display:none
+}
+#schedule .team-schedule .game-date .schedule-date .detail-cells td .game-page{
+    vertical-align:top
+}
+#schedule .team-schedule .game-date .schedule-date .detail-cells .game-detail .game-time{
+    display:block
+}
+#schedule .team-schedule .game-date .schedule-date .detail-cells .game-detail .game-time:after{
+    content:""
+}
+#schedule .team-schedule .game-date .schedule-date .detail-cells .game-detail .channel{
+    color:#b90a0a;
+    font-weight:bold
+}
+#schedule .team-schedule .game-date .schedule-date .detail-cells .game-detail .game-time-mobile{
+    display:none
+}
+#schedule .team-schedule .game-date .schedule-date .detail-cells .game-detail .game-date-mobile{
+    display:none
+}
+#schedule .team-schedule .game-date .schedule-date .detail-cells .game-detail .postponed{
+    display:block
+}
+#schedule .team-schedule .game-date .schedule-date .detail-cells .game-detail .postponed:after{
+    content:""
+}
+#schedule .team-schedule:last-child{
+    margin-top:10px
+}
+@media screen and (max-width: 1000px){
+    #schedule .league-schedule .game-date .schedule-date .headers th:first-child,#schedule .team-schedule .game-date .schedule-date .headers th:first-child{
+        border-right:1px solid #dcdee0
+    }
+    #schedule .league-schedule .game-date .schedule-date .headers .last,#schedule .team-schedule .game-date .schedule-date .headers .last{
+        display:none
+    }
+    #schedule .league-schedule .game-date .schedule-date .detail-cells td span .city-long,#schedule .team-schedule .game-date .schedule-date .detail-cells td span .city-long{
+        display:none
+    }
+    #schedule .league-schedule .game-date .schedule-date .detail-cells td span .city-short,#schedule .team-schedule .game-date .schedule-date .detail-cells td span .city-short{
+        display:inline-block
+    }
+    #schedule .league-schedule .game-date .schedule-date .desktop-cells,#schedule .team-schedule .game-date .schedule-date .desktop-cells{
+        background-color:#FFF
+    }
+    #schedule .league-schedule .game-date .schedule-date .desktop-cells .game-detail,#schedule .team-schedule .game-date .schedule-date .desktop-cells .game-detail{
+        display:none
+    }
+    #schedule .league-schedule .game-date .schedule-date .mobile-cells,#schedule .team-schedule .game-date .schedule-date .mobile-cells{
+        display:table-row;
+        background-color:#f0f1f2;
+        border-bottom:1px solid #dcdee0
+    }
+    #schedule .league-schedule .game-date .schedule-date .mobile-cells td,#schedule .team-schedule .game-date .schedule-date .mobile-cells td{
+        text-align:center !important
+    }
+    #schedule .team-schedule .game-date .schedule-date .detail-cells .game-detail .game-time,#schedule .team-schedule .game-date .schedule-date .detail-cells .game-detail .game-page{
+        display:inline !important
+    }
+    #schedule .team-schedule .game-date .schedule-date .detail-cells .game-detail .game-time:after{
+        content:"|"
+    }
+}
+@media screen and (max-width: 1000px){
+    #schedule .league-schedule .game-date .schedule-date .detail-cells .game-detail .game-time,#schedule .team-schedule .game-date .schedule-date .detail-cells .game-detail .game-time{
+        display:inline-block
+    }
+    #schedule .league-schedule .game-date .schedule-date .detail-cells .game-detail a,#schedule .team-schedule .game-date .schedule-date .detail-cells .game-detail a{
+        display:inline-block
+    }
+}
+@media screen and (max-width: 767px){
+    #schedule .league-schedule .game-date .schedule-date .detail-cells td.home,#schedule .league-schedule .game-date .schedule-date .detail-cells td.away,#schedule .league-schedule .game-date .schedule-date .detail-cells td:nth-child(3),#schedule .league-schedule .game-date .schedule-date .detail-cells td:first-child,#schedule .team-schedule .game-date .schedule-date .detail-cells td.home,#schedule .team-schedule .game-date .schedule-date .detail-cells td.away,#schedule .team-schedule .game-date .schedule-date .detail-cells td:nth-child(3),#schedule .team-schedule .game-date .schedule-date .detail-cells td:first-child{
+        width:30%
+    }
+    #schedule .league-schedule .game-date .schedule-date .detail-cells td:nth-child(2),#schedule .team-schedule .game-date .schedule-date .detail-cells td:nth-child(2){
+        min-width:50px
+    }
+    #schedule .league-schedule .game-date .schedule-date .detail-cells .game-detail .game-time,#schedule .team-schedule .game-date .schedule-date .detail-cells .game-detail .game-time{
+        display:inline-block
+    }
+    #schedule .league-schedule .game-date .schedule-date .detail-cells .game-detail a,#schedule .team-schedule .game-date .schedule-date .detail-cells .game-detail a{
+        display:inline-block
+    }
+    #schedule .league-schedule .game-date .schedule-date .detail-cells td.away,#schedule .team-schedule .game-date .schedule-date .detail-cells td.away{
+        width:30%
+    }
+    #schedule .league-schedule .game-date .schedule-date .detail-cells td.home,#schedule .team-schedule .game-date .schedule-date .detail-cells td.home{
+        width:30%
+    }
+}
+#leagueleaders{
+    display:inline-block;
+    width:100%
+}
+#leagueleaders .no-leaders{
+    display:none
+}
+#leagueleaders .no-data-found{
+    display:none
+}
+#leagueleaders .hub-header-nav{
+    margin-bottom:20px
+}
+#leagueleaders .hub-header-nav .extra{
+    float:right;
+    position:relative;
+    top:-3px
+}
+#leagueleaders .hub-header-nav .extra:before{
+    content:"";
+    display:inline-block;
+    width:8px;
+    height:10px;
+    margin:0 0 1px 0;
+    background-image:url(//tsnimages.tsn.ca/ImageProvider/AssetImage?seoid=tsn-sprite);
+    background-repeat:no-repeat;
+    background-position:-262px -90px
+}
+#leagueleaders .hub-header-nav .extra a{
+    margin-left:5px;
+    color:#333;
+    text-transform:uppercase
+}
+#leagueleaders .league-leaders{
+    display:none
+}
+#leagueleaders .leaders-column{
+    float:left;
+    width:50%
+}
+#leagueleaders .leaders-column:first-child{
+    padding-right:24px
+}
+#leagueleaders .leaders-column.even{
+    background-color:transparent
+}
+#leagueleaders .leaders-column.ng-hide+.even{
+    padding-right:24px
+}
+#leagueleaders .leaders-column h4{
+    text-transform:uppercase
+}
+#leagueleaders .leaders-column .stat-leaders-container{
+    margin-bottom:20px
+}
+#leagueleaders .leaders-column .stat-leaders-container table{
+    margin-bottom:10px
+}
+#leagueleaders .leaders-column .stat-leaders-container table .detail-cells td{
+    border-right:1px solid #dcdee0
+}
+#leagueleaders .leaders-column .stat-leaders-container table .detail-cells td:first-child{
+    text-align:center;
+    width:5%
+}
+#leagueleaders .leaders-column .stat-leaders-container table .detail-cells td:nth-child(2){
+    text-align:left
+}
+#leagueleaders .leaders-column .stat-leaders-container table .detail-cells .team{
+    text-transform:uppercase
+}
+#leagueleaders .leaders-column .stat-leaders-container table .detail-cells .team a{
+    color:#333
+}
+#leagueleaders .leaders-column .stat-leaders-container table .detail-cells .team,#leagueleaders .leaders-column .stat-leaders-container table .detail-cells .last{
+    width:10%
+}
+#leagueleaders .leaders-column .stat-leaders-container table .leader .leader-player{
+    padding:0px
+}
+#leagueleaders .leaders-column .stat-leaders-container table .leader .leader-player .player-link{
+    display:inline-block;
+    overflow:hidden;
+    float:left
+}
+#leagueleaders .leaders-column .stat-leaders-container table .leader .leader-player .profile-pic,#leagueleaders .leaders-column .stat-leaders-container table .leader .leader-player h3{
+    float:left
+}
+#leagueleaders .leaders-column .stat-leaders-container table .leader .leader-player .profile-pic{
+    padding:10px;
+    width:81px
+}
+#leagueleaders .leaders-column .stat-leaders-container table .leader .leader-player h3{
+    font-size:18px;
+    padding-top:15px
+}
+#leagueleaders .leaders-column .stat-leaders-container table .leader .leader-player h3 .logo{
+    display:inline-block;
+    margin-bottom:-5px;
+    width:24px;
+    height:24px
+}
+#leagueleaders .leaders-column .stat-leaders-container table .leader .leader-player h3 strong{
+    text-transform:uppercase
+}
+#leagueleaders .leaders-column .stat-leaders-container table .leader .leader-player .value{
+    display:block;
+    font-size:32px;
+    line-height:32px;
+    text-align:left
+}
+#leagueleaders .leaders-column .stat-leaders-container .complete-leaders{
+    text-transform:uppercase;
+    color:#333;
+    font-size:12px;
+    font-family:Arial,sans-serif;
+    font-weight:bold
+}
+#leagueleaders .leaders-column .stat-leaders-container .complete-leaders:before{
+    content:"";
+    display:inline-block;
+    width:8px;
+    height:10px;
+    margin:0 0 -1px 0;
+    background-image:url(//tsnimages.tsn.ca/ImageProvider/AssetImage?seoid=tsn-sprite);
+    background-repeat:no-repeat;
+    background-position:-262px -90px
+}
+#leagueleaders .leaders-column .stat-leaders-container .complete-leaders span{
+    margin-left:5px;
+    vertical-align:middle
+}
+@media screen and (max-width: 1000px){
+    #leagueleaders .leaders-column{
+        width:100%
+    }
+    #leagueleaders .leaders-column .stat-leaders-container table .leader .leader-player h3{
+        font-size:18px
+    }
+    #leagueleaders .leaders-column:first-child{
+        padding-right:0
+    }
+}
+@media screen and (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5), (min-resolution: 96dpi), (min-resolution: 1.5dppx){
+    #leagueleaders .hub-header-nav .extra:before{
+        background-image:url(//tsnimages.tsn.ca/ImageProvider/AssetImage?seoid=tsn-sprite-2x) !important;
+        background-repeat:no-repeat;
+        background-size:800px 500px !important
+    }
+    #leagueleaders .leaders-column .stat-leaders-container .complete-leaders:before{
+        background-image:url(//tsnimages.tsn.ca/ImageProvider/AssetImage?seoid=tsn-sprite-2x) !important;
+        background-repeat:no-repeat;
+        background-size:800px 500px !important;
+        margin:0 0 -2px 0
+    }
+}
+#league-stats .content-right{
+    display:none
+}
+#league-stats .stats-table-top,#league-stats .stats-table-bottom{
+    display:none
+}
+#league-stats-content{
+    display:block;
+    font:13px Arial,sans-serif
+}
+#league-stats-content .hub-header-nav{
+    font:19px "Pill-Gothic-Bold",Arial,sans-serif;
+    margin-bottom:15px
+}
+#league-stats-content .ui-tabs-panel{
+    padding-left:0px;
+    padding-right:0px
+}
+#league-stats-content .ui-tabs-panel .column-dropdown{
+    display:none
+}
+#league-stats-content .ui-tabs-panel .column-dropdown select{
+    color:#b90a0a
+}
+#league-stats-content .ui-tabs-panel .column-dropdown select option{
+    color:#323232
+}
+#league-stats-content .ui-tabs-panel div.dataTables_filter{
+    float:right;
+    margin-right:0px
+}
+#league-stats-content .ui-tabs-panel div.dataTables_filter input{
+    min-width:180px
+}
+#league-stats-content .no-stats{
+    display:none
+}
+#league-stats-content .no-players-found{
+    text-align:center;
+    font-size:16px;
+    font-family:"Arial",sans-serif
+}
+@media screen and (max-width: 1024px){
+    #league-stats-content .ui-tabs-panel div.dataTables_filter{
+        display:block;
+        width:100%;
+        margin:10px 0px 0px 0px
+    }
+    #league-stats-content .ui-tabs-panel div.dataTables_filter input{
+        width:100%;
+        padding-right:25px
+    }
+}
+@media screen and (max-width: 900px){
+    #league-stats-content .legend-container{
+        width:100%
+    }
+    #league-stats-content .legend-container td{
+        vertical-align:top
+    }
+}
+.content-wrapper .content.game-page .content-main{
+    padding-top:0px
+}
+.game-page,#webview{
+    overflow:hidden;
+    margin:0 auto;
+    max-width:980px;
+    width:100%
+}
+.game-page .page-tabs .page-nav li .comments,#webview .page-tabs .page-nav li .comments{
+    color:#adadb2;
+    margin-left:2px
+}
+.game-page .feed>li:first-child article,#webview .feed>li:first-child article{
+    padding-top:15px
+}
+.game-page .nhl-strength,#webview .nhl-strength{
+    margin-left:7px;
+    background-color:#b90a0a
+}
+.game-page .playoff-series,#webview .playoff-series{
+    display:inline-block
+}
+.game-page .game-page-log-none,#webview .game-page-log-none{
+    display:none;
+    background-color:#fff;
+    padding:10px;
+    text-align:center;
+    font:19px "Pill-Gothic-Bold",Arial,sans-serif
+}
+.game-page .game-page-log .game-page-log-wrapper,#webview .game-page-log .game-page-log-wrapper{
+    padding:20px 0 0
+}
+.game-page .game-page-log .game-page-log-wrapper .stats-table table tr a.red,#webview .game-page-log .game-page-log-wrapper .stats-table table tr a.red{
+    color:#b90a0a !important
+}
+.game-page .game-page-log .game-page-log-wrapper .game-page-log-table,#webview .game-page-log .game-page-log-wrapper .game-page-log-table{
+    padding-bottom:20px
+}
+.game-page .game-page-log .game-page-log-wrapper .game-page-log-table .stats-table-header h4,#webview .game-page-log .game-page-log-wrapper .game-page-log-table .stats-table-header h4{
+    display:inline-block
+}
+.game-page .game-page-log .game-page-log-wrapper .game-page-log-table .stats-table-header.grey-bg h4,#webview .game-page-log .game-page-log-wrapper .game-page-log-table .stats-table-header.grey-bg h4{
+    color:#323232
+}
+.game-page .game-page-log .game-page-log-wrapper .game-page-log-table .collapse-header,#webview .game-page-log .game-page-log-wrapper .game-page-log-table .collapse-header{
+    padding:0px
+}
+.game-page .game-page-log .game-page-log-wrapper .game-page-log-table .collapse-header h4,#webview .game-page-log .game-page-log-wrapper .game-page-log-table .collapse-header h4{
+    padding:7px 10px
+}
+.game-page .game-page-log .game-page-log-wrapper .game-page-log-table table,#webview .game-page-log .game-page-log-wrapper .game-page-log-table table{
+    width:100%;
+    border:1px solid #dcdee0;
+    border-collapse:initial
+}
+.game-page .game-page-log .game-page-log-wrapper .game-page-log-table table tr td,#webview .game-page-log .game-page-log-wrapper .game-page-log-table table tr td{
+    padding:7px 10px;
+    font-size:12px
+}
+.game-page .game-page-log .game-page-log-wrapper .game-page-log-table table tr td.team-score,#webview .game-page-log .game-page-log-wrapper .game-page-log-table table tr td.team-score{
+    text-align:center;
+    width:50px;
+    border-left:1px solid #dcdee0
+}
+.game-page .game-page-log .game-page-log-wrapper .game-page-log-table table tr td.play-details,#webview .game-page-log .game-page-log-wrapper .game-page-log-table table tr td.play-details{
+    width:20%;
+    text-transform:uppercase;
+    border-right:1px solid #dcdee0
+}
+.game-page .game-page-log .game-page-log-wrapper .game-page-log-table table tr td.play-description,#webview .game-page-log .game-page-log-wrapper .game-page-log-table table tr td.play-description{
+    text-align:left
+}
+.game-page .game-page-log .game-page-log-wrapper .game-page-log-table table tr td.summary,#webview .game-page-log .game-page-log-wrapper .game-page-log-table table tr td.summary{
+    border-top:1px solid #dcdee0
+}
+.game-page .game-page-log .game-page-log-wrapper .game-page-log-table table tr.stats-table-header,#webview .game-page-log .game-page-log-wrapper .game-page-log-table table tr.stats-table-header{
+    font-size:13px;
+    color:#fff;
+    text-transform:uppercase;
+    background-color:#323232;
+    border-bottom:1px solid #fff
+}
+.game-page .game-page-log .game-page-log-wrapper .game-page-log-table table tr.stats-table-header th,#webview .game-page-log .game-page-log-wrapper .game-page-log-table table tr.stats-table-header th{
+    padding:7px 10px
+}
+.game-page .game-page-log .game-page-log-wrapper .game-page-log-table table tr.stats-table-header th h4,#webview .game-page-log .game-page-log-wrapper .game-page-log-table table tr.stats-table-header th h4{
+    font-family:Arial,sans-serif;
+    text-align:left
+}
+.game-page .game-page-log .game-page-log-wrapper .game-page-log-table table td.stats-table-header.grey-bg,#webview .game-page-log .game-page-log-wrapper .game-page-log-table table td.stats-table-header.grey-bg{
+    background-color:#dcdee0
+}
+.game-page .game-page-log .game-page-log-wrapper .game-page-log-table table tr.headers,#webview .game-page-log .game-page-log-wrapper .game-page-log-table table tr.headers{
+    background-color:#dcdee0
+}
+.game-page .game-page-log .game-page-log-wrapper .game-page-log-table table tr.headers th,#webview .game-page-log .game-page-log-wrapper .game-page-log-table table tr.headers th{
+    padding:7px 10px;
+    text-transform:uppercase;
+    text-align:left;
+    font-size:11px
+}
+.game-page .game-page-log .game-page-log-wrapper .game-page-log-table table tr.headers th.team-name,#webview .game-page-log .game-page-log-wrapper .game-page-log-table table tr.headers th.team-name{
+    text-align:center
+}
+.game-page .game-page-log .game-page-log-wrapper .game-page-log-table table tr.score-changed,#webview .game-page-log .game-page-log-wrapper .game-page-log-table table tr.score-changed{
+    color:#b90a0a
+}
+.game-page .game-page-container,#webview .game-page-container{
+    margin:0 auto;
+    max-width:980px;
+    width:100%
+}
+.game-page .game-page-container .game-page-stats .game-page-stats-container,#webview .game-page-container .game-page-stats .game-page-stats-container{
+    color:#adadb2;
+    background:#27292b;
+    padding-bottom:10px;
+    width:100%;
+    min-width:auto;
+    font-size:12px
+}
+.game-page .game-page-container .game-page-stats .game-page-stats-container td,.game-page .game-page-container .game-page-stats .game-page-stats-container th,#webview .game-page-container .game-page-stats .game-page-stats-container td,#webview .game-page-container .game-page-stats .game-page-stats-container th{
+    color:#adadb2;
+    font-size:12px
+}
+.game-page .game-page-container .game-page-stats .game-page-stats-container .game-wrapper,#webview .game-page-container .game-page-stats .game-page-stats-container .game-wrapper{
+    overflow:auto
+}
+.game-page .game-page-container .game-page-stats .game-page-stats-container .game-wrapper .game-stats,#webview .game-page-container .game-page-stats .game-page-stats-container .game-wrapper .game-stats{
+    position:relative;
+    float:left;
+    height:auto;
+    vertical-align:top;
+    padding-left:10px;
+    width:33%
+}
+.game-page .game-page-container .game-page-stats .game-page-stats-container .game-wrapper .game-stats td,#webview .game-page-container .game-page-stats .game-page-stats-container .game-wrapper .game-stats td{
+    text-align:center
+}
+.game-page .game-page-container .game-page-stats .game-page-stats-container .game-wrapper .game-stats .game-stats-table,#webview .game-page-container .game-page-stats .game-page-stats-container .game-wrapper .game-stats .game-stats-table{
+    text-align:center;
+    width:100%
+}
+.game-page .game-page-container .game-page-stats .game-page-stats-container .game-wrapper .game-stats .game-stats-table tr,#webview .game-page-container .game-page-stats .game-page-stats-container .game-wrapper .game-stats .game-stats-table tr{
+    line-height:25px
+}
+.game-page .game-page-container .game-page-stats .game-page-stats-container .game-wrapper .game-stats .game-stats-table tr td,#webview .game-page-container .game-page-stats .game-page-stats-container .game-wrapper .game-stats .game-stats-table tr td{
+    background:#181a1d;
+    padding-top:3px;
+    padding-left:7px;
+    padding-right:7px;
+    border-bottom:1px solid #27292b
+}
+.game-page .game-page-container .game-page-stats .game-page-stats-container .game-wrapper .game-stats .game-stats-table tr td.stats,#webview .game-page-container .game-page-stats .game-page-stats-container .game-wrapper .game-stats .game-stats-table tr td.stats{
+    padding-left:10px;
+    padding-right:10px;
+    border-left:1px solid #27292b
+}
+.game-page .game-page-container .game-page-stats .game-page-stats-container .game-wrapper .game-stats .game-stats-table tr .overtime,#webview .game-page-container .game-page-stats .game-page-stats-container .game-wrapper .game-stats .game-stats-table tr .overtime{
+    display:none
+}
+.game-page .game-page-container .game-page-stats .game-page-stats-container .game-wrapper .game-stats .game-stats-table tr .team-score,#webview .game-page-container .game-page-stats .game-page-stats-container .game-wrapper .game-stats .game-stats-table tr .team-score{
+    color:#fff
+}
+.game-page .game-page-container .game-page-stats .game-page-stats-container .game-wrapper .game-stats .game-stats-table tr.boxscore-header th,#webview .game-page-container .game-page-stats .game-page-stats-container .game-wrapper .game-stats .game-stats-table tr.boxscore-header th{
+    padding-top:3px;
+    font-weight:normal;
+    text-align:center;
+    padding-left:6px;
+    padding-right:6px
+}
+.game-page .game-page-container .game-page-stats .game-page-stats-container .game-wrapper .game-stats .game-stats-table tr.boxscore-header td,#webview .game-page-container .game-page-stats .game-page-stats-container .game-wrapper .game-stats .game-stats-table tr.boxscore-header td{
+    background-color:#27292b;
+    padding-top:3px;
+    text-align:center
+}
+.game-page .game-page-container .game-page-stats .game-page-stats-container .game-wrapper .game-stats .game-stats-table .team-record .league,#webview .game-page-container .game-page-stats .game-page-stats-container .game-wrapper .game-stats .game-stats-table .team-record .league{
+    text-transform:uppercase
+}
+.game-page .game-page-container .game-page-stats .game-page-stats-container .game-wrapper .game-stats .game-stats-table .team-record .division,#webview .game-page-container .game-page-stats .game-page-stats-container .game-wrapper .game-stats .game-stats-table .team-record .division{
+    text-transform:capitalize
+}
+.game-page .game-page-container .game-page-stats .game-page-stats-container .game-wrapper .game-stats .game-stats-table .team-name,#webview .game-page-container .game-page-stats .game-page-stats-container .game-wrapper .game-stats .game-stats-table .team-name{
+    font-weight:bold;
+    padding-left:10px;
+    padding-right:10px;
+    text-align:left;
+    color:#fff;
+    border-right:1px solid #27292b
+}
+.game-page .game-page-container .game-page-stats .game-page-stats-container .game-wrapper .game-stats .game-stats-table .team-name a,#webview .game-page-container .game-page-stats .game-page-stats-container .game-wrapper .game-stats .game-stats-table .team-name a{
+    color:#fff
+}
+.game-page .game-page-container .game-page-stats .game-page-stats-container .game-wrapper .game-stats .extra-next,#webview .game-page-container .game-page-stats .game-page-stats-container .game-wrapper .game-stats .extra-next{
+    background-image:url(//tsnimages.tsn.ca/ImageProvider/AssetImage?seoid=tsn-sprite);
+    background-repeat:no-repeat;
+    background-position:-722px -20px;
+    width:22px;
+    height:61px;
+    padding:11px;
+    cursor:pointer
+}
+.game-page .game-page-container .game-page-stats .game-page-stats-container .game-wrapper .game-stats .extra-prev,#webview .game-page-container .game-page-stats .game-page-stats-container .game-wrapper .game-stats .extra-prev{
+    background-image:url(//tsnimages.tsn.ca/ImageProvider/AssetImage?seoid=tsn-sprite);
+    background-repeat:no-repeat;
+    background-position:-692px -20px;
+    width:22px;
+    height:61px;
+    padding:11px;
+    display:none;
+    cursor:pointer
+}
+.game-page .game-page-container .game-page-stats .game-page-stats-container .game-wrapper .game-ingame,#webview .game-page-container .game-page-stats .game-page-stats-container .game-wrapper .game-ingame{
+    float:left;
+    min-width:275px;
+    padding-left:7px;
+    width:33%
+}
+.game-page .game-page-container .game-page-stats .game-page-stats-container .game-wrapper .game-ingame .game-ingame,#webview .game-page-container .game-page-stats .game-page-stats-container .game-wrapper .game-ingame .game-ingame{
+    width:100%;
+    padding-left:0px
+}
+.game-page .game-page-container .game-page-stats .game-page-stats-container .game-wrapper .game-ingame .game-ingame .game-ingame-situation,#webview .game-page-container .game-page-stats .game-page-stats-container .game-wrapper .game-ingame .game-ingame .game-ingame-situation{
+    text-align:left
+}
+.game-page .game-page-container .game-page-stats .game-page-stats-container .game-wrapper .game-ingame .game-stats-table,#webview .game-page-container .game-page-stats .game-page-stats-container .game-wrapper .game-ingame .game-stats-table{
+    text-align:left;
+    width:100%
+}
+.game-page .game-page-container .game-page-stats .game-page-stats-container .game-wrapper .game-ingame .game-stats-table th,#webview .game-page-container .game-page-stats .game-page-stats-container .game-wrapper .game-ingame .game-stats-table th{
+    text-align:left;
+    text-transform:uppercase;
+    padding-left:7px;
+    padding-top:3px;
+    font-weight:normal
+}
+.game-page .game-page-container .game-page-stats .game-page-stats-container .game-wrapper .game-ingame .game-stats-table .game-ingame-header,#webview .game-page-container .game-page-stats .game-page-stats-container .game-wrapper .game-ingame .game-stats-table .game-ingame-header{
+    color:#fbb41b;
+    text-transform:uppercase;
+    text-align:left;
+    padding-right:5px
+}
+.game-page .game-page-container .game-page-stats .game-page-stats-container .game-wrapper .game-ingame .game-stats-table td,#webview .game-page-container .game-page-stats .game-page-stats-container .game-wrapper .game-ingame .game-stats-table td{
+    background:#181a1d;
+    padding:1px 7px;
+    padding-top:3px;
+    border-bottom:1px solid #27292b
+}
+.game-page .game-page-container .game-page-stats .game-page-stats-container .game-wrapper .game-ingame .game-stats-table tr,#webview .game-page-container .game-page-stats .game-page-stats-container .game-wrapper .game-ingame .game-stats-table tr{
+    line-height:25px
+}
+.game-page .game-page-container .game-page-stats .game-page-stats-container .game-wrapper .game-ingame .game-stats-table .player-name,#webview .game-page-container .game-page-stats .game-page-stats-container .game-wrapper .game-ingame .game-stats-table .player-name{
+    display:inline-block;
+    color:#fff;
+    font-weight:bold
+}
+.game-page .game-page-container .game-page-stats .game-page-stats-container .game-wrapper .game-ingame .game-stats-table .player-name a,#webview .game-page-container .game-page-stats .game-page-stats-container .game-wrapper .game-ingame .game-stats-table .player-name a{
+    color:#fff;
+    font-weight:bold
+}
+.game-page .game-page-container .game-page-stats .game-page-stats-container .game-wrapper .game-ingame .game-stats-table .stat-line,#webview .game-page-container .game-page-stats .game-page-stats-container .game-wrapper .game-ingame .game-stats-table .stat-line{
+    color:#adadb2;
+    font-weight:normal
+}
+.game-page .game-page-container .game-page-stats .game-page-stats-container .game-wrapper>div:last-child,.game-page .game-page-container .game-page-stats .game-page-stats-container .game-wrapper>div.last-child,#webview .game-page-container .game-page-stats .game-page-stats-container .game-wrapper>div:last-child,#webview .game-page-container .game-page-stats .game-page-stats-container .game-wrapper>div.last-child{
+    float:none;
+    height:auto;
+    width:auto;
+    overflow:hidden;
+    min-width:275px;
+    vertical-align:top;
+    padding-right:10px
+}
+.game-page .game-page-container .game-page-stats .game-page-stats-container .game-wrapper.pregame>div:last-child,.game-page .game-page-container .game-page-stats .game-page-stats-container .game-wrapper.pregame>div.last-child,#webview .game-page-container .game-page-stats .game-page-stats-container .game-wrapper.pregame>div:last-child,#webview .game-page-container .game-page-stats .game-page-stats-container .game-wrapper.pregame>div.last-child{
+    float:none;
+    min-width:275px;
+    padding-left:10px;
+    width:auto
+}
+.game-page .game-page-container .game-page-stats .game-page-stats-container .game-last-play-container,#webview .game-page-container .game-page-stats .game-page-stats-container .game-last-play-container{
+    border-bottom:1px solid #494a4c
+}
+.game-page .game-page-container .game-page-stats .game-page-stats-container .game-last-play-container .game-last-play,#webview .game-page-container .game-page-stats .game-page-stats-container .game-last-play-container .game-last-play{
+    padding:5px 10px 6px 10px
+}
+.game-page .game-page-container .game-page-stats .game-page-stats-container .game-last-play-container .game-last-play .title,#webview .game-page-container .game-page-stats .game-page-stats-container .game-last-play-container .game-last-play .title{
+    position:absolute;
+    vertical-align:middle
+}
+.game-page .game-page-container .game-page-stats .game-page-stats-container .game-last-play-container .game-last-play .description,#webview .game-page-container .game-page-stats .game-page-stats-container .game-last-play-container .game-last-play .description{
+    margin-left:100px;
+    display:inline-block;
+    vertical-align:middle
+}
+.game-page .game-page-container .game-page-stats .game-page-stats-container .game-last-play-container .game-last-play .team-name,#webview .game-page-container .game-page-stats .game-page-stats-container .game-last-play-container .game-last-play .team-name{
+    margin:0 5px;
+    background-color:#b90a0a;
+    color:#fff;
+    padding:1px 5px;
+    text-transform:uppercase;
+    display:inline-block;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    border-radius:3px
+}
+.game-page .game-page-container .game-page-header,#webview .game-page-container .game-page-header{
+    background:#27292b;
+    border-top:1px solid #494a4c;
+    padding:8px 20px
+}
+.game-page .game-page-container .game-page-header .game-page-date,#webview .game-page-container .game-page-header .game-page-date{
+    font-size:13px;
+    color:#adadb2
+}
+.game-page .game-page-container .game-page-info,#webview .game-page-container .game-page-info{
+    margin:0 auto;
+    padding:0px 20px 0 20px;
+    background:#494a4c;
+    background:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzQ5NGE0YyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iIzQ5NGE0YyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUxJSIgc3RvcC1jb2xvcj0iIzM0MzUzNyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMzNDM1MzciIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background:-moz-linear-gradient(top, #494a4c 0%, #494a4c 50%, #343537 51%, #343537 100%);
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #494a4c), color-stop(50%, #494a4c), color-stop(51%, #343537), color-stop(100%, #343537));
+    background:-webkit-linear-gradient(top, #494a4c 0%, #494a4c 50%, #343537 51%, #343537 100%);
+    background:-o-linear-gradient(top, #494a4c 0%, #494a4c 50%, #343537 51%, #343537 100%);
+    background:-ms-linear-gradient(top, #494a4c 0%, #494a4c 50%, #343537 51%, #343537 100%);
+    background:linear-gradient(to bottom, #494a4c 0%,#494a4c 50%,#343537 51%,#343537 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#494a4c', endColorstr='#343537',GradientType=0 )
+}
+.game-page .game-page-container .game-page-info .game-page-teams,#webview .game-page-container .game-page-info .game-page-teams{
+    color:#fff
+}
+.game-page .game-page-container .game-page-info .game-page-teams .game-location,#webview .game-page-container .game-page-info .game-page-teams .game-location{
+    clear:both;
+    text-align:center;
+    font-size:12px;
+    color:#adadb2;
+    padding:10px 0
+}
+.game-page .game-page-container .game-page-info .game-page-teams .game-time,#webview .game-page-container .game-page-info .game-page-teams .game-time{
+    text-align:center;
+    font-size:12px;
+    font-weight:bold;
+    color:#fbb41b;
+    padding:10px 0
+}
+.game-page .game-page-container .game-page-info .game-page-teams .team,#webview .game-page-container .game-page-info .game-page-teams .team{
+    position:relative
+}
+.game-page .game-page-container .game-page-info .game-page-teams .team .team-info,#webview .game-page-container .game-page-info .game-page-teams .team .team-info{
+    vertical-align:middle
+}
+.game-page .game-page-container .game-page-info .game-page-teams .team .team-info ul,#webview .game-page-container .game-page-info .game-page-teams .team .team-info ul{
+    height:auto;
+    line-height:20px;
+    padding:8px 10px;
+    font-family:"Pill-Gothic-Bold",Arial,sans-serif;
+    text-transform:uppercase
+}
+.game-page .game-page-container .game-page-info .game-page-teams .team .team-info ul .team-city,#webview .game-page-container .game-page-info .game-page-teams .team .team-info ul .team-city{
+    font:12px Arial,sans-serif;
+    padding:0px 1px
+}
+.game-page .game-page-container .game-page-info .game-page-teams .team .team-info ul .team-name,#webview .game-page-container .game-page-info .game-page-teams .team .team-info ul .team-name{
+    font-size:26px;
+    padding:2px 0px
+}
+.game-page .game-page-container .game-page-info .game-page-teams .team .team-info ul .team-name-mobile,#webview .game-page-container .game-page-info .game-page-teams .team .team-info ul .team-name-mobile{
+    display:none;
+    font-size:24px
+}
+.game-page .game-page-container .game-page-info .game-page-teams .team .team-info ul .team-record,#webview .game-page-container .game-page-info .game-page-teams .team .team-info ul .team-record{
+    text-transform:none;
+    font:12px Arial,sans-serif
+}
+.game-page .game-page-container .game-page-info .game-page-teams .team .team-info.wjc ul,#webview .game-page-container .game-page-info .game-page-teams .team .team-info.wjc ul{
+    line-height:28px
+}
+.game-page .game-page-container .game-page-info .game-page-teams .team .logo-score-gradient,#webview .game-page-container .game-page-info .game-page-teams .team .logo-score-gradient{
+    background:#fff;
+    background:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUxJSIgc3RvcC1jb2xvcj0iI2YyZjJmMyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmMmYyZjMiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background:-moz-linear-gradient(top, #fff 0%, #fff 50%, #f2f2f3 51%, #f2f2f3 100%);
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #fff), color-stop(50%, #fff), color-stop(51%, #f2f2f3), color-stop(100%, #f2f2f3));
+    background:-webkit-linear-gradient(top, #fff 0%, #fff 50%, #f2f2f3 51%, #f2f2f3 100%);
+    background:-o-linear-gradient(top, #fff 0%, #fff 50%, #f2f2f3 51%, #f2f2f3 100%);
+    background:-ms-linear-gradient(top, #fff 0%, #fff 50%, #f2f2f3 51%, #f2f2f3 100%);
+    background:linear-gradient(to bottom, #ffffff 0%,#ffffff 50%,#f2f2f3 51%,#f2f2f3 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f2f2f3',GradientType=0 )
+}
+.game-page .game-page-container .game-page-info .game-page-teams .team .gloss,#webview .game-page-container .game-page-info .game-page-teams .team .gloss{
+    position:absolute;
+    height:34px;
+    width:100%;
+    background:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwLjYiLz4KICAgIDxzdG9wIG9mZnNldD0iMzUlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIiBzdG9wLW9wYWNpdHk9IjAuNSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIiBzdG9wLW9wYWNpdHk9IjAuMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background:-moz-linear-gradient(top, rgba(255,255,255,0.6) 0%, rgba(255,255,255,0.5) 35%, rgba(255,255,255,0.1) 100%);
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255,255,255,0.6)), color-stop(35%, rgba(255,255,255,0.5)), color-stop(100%, rgba(255,255,255,0.1)));
+    background:-webkit-linear-gradient(top, rgba(255,255,255,0.6) 0%, rgba(255,255,255,0.5) 35%, rgba(255,255,255,0.1) 100%);
+    background:-o-linear-gradient(top, rgba(255,255,255,0.6) 0%, rgba(255,255,255,0.5) 35%, rgba(255,255,255,0.1) 100%);
+    background:-ms-linear-gradient(top, rgba(255,255,255,0.6) 0%, rgba(255,255,255,0.5) 35%, rgba(255,255,255,0.1) 100%);
+    background:linear-gradient(to bottom, rgba(255,255,255,0.6) 0%,rgba(255,255,255,0.5) 35%,rgba(255,255,255,0.1) 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#99ffffff', endColorstr='#1affffff',GradientType=0 )
+}
+.game-page .game-page-container .game-page-info .game-page-teams .team .team-score,#webview .game-page-container .game-page-info .game-page-teams .team .team-score{
+    vertical-align:middle;
+    text-align:center;
+    width:100px;
+    color:#323232;
+    font:48px "Pill-Gothic-Bold",Arial,sans-serif;
+    line-height:68px
+}
+.game-page .game-page-container .game-page-info .game-page-teams .team .team-score .shootout-score,#webview .game-page-container .game-page-info .game-page-teams .team .team-score .shootout-score{
+    font-size:24px;
+    vertical-align:top;
+    line-height:45px
+}
+.game-page .game-page-container .game-page-info .game-page-teams .team-1,#webview .game-page-container .game-page-info .game-page-teams .team-1{
+    overflow:hidden;
+    width:50%;
+    float:left;
+    padding-right:5px
+}
+.game-page .game-page-container .game-page-info .game-page-teams .team-1 .team-logo,#webview .game-page-container .game-page-info .game-page-teams .team-1 .team-logo{
+    float:left;
+    vertical-align:middle;
+    text-align:center;
+    width:68px;
+    height:68px;
+    line-height:62px;
+    padding:2px;
+    -moz-border-radius-bottomleft:5px;
+    -webkit-border-bottom-left-radius:5px;
+    border-bottom-left-radius:5px
+}
+.game-page .game-page-container .game-page-info .game-page-teams .team-1 .team-logo img,#webview .game-page-container .game-page-info .game-page-teams .team-1 .team-logo img{
+    vertical-align:middle;
+    width:64px
+}
+.game-page .game-page-container .game-page-info .game-page-teams .team-1 .team-info,#webview .game-page-container .game-page-info .game-page-teams .team-1 .team-info{
+    position:relative;
+    color:#fff;
+    border-left:1px #343537 solid;
+    border-right:1px #343537 solid;
+    height:68px;
+    margin:0 100px 0 68px
+}
+.game-page .game-page-container .game-page-info .game-page-teams .team-1 .team-score,#webview .game-page-container .game-page-info .game-page-teams .team-1 .team-score{
+    float:right;
+    -moz-border-radius-bottomright:5px;
+    -webkit-border-bottom-right-radius:5px;
+    border-bottom-right-radius:5px
+}
+.game-page .game-page-container .game-page-info .game-page-teams .team-2,#webview .game-page-container .game-page-info .game-page-teams .team-2{
+    overflow:hidden;
+    width:50%;
+    float:left;
+    padding-left:5px
+}
+.game-page .game-page-container .game-page-info .game-page-teams .team-2 .team-logo,#webview .game-page-container .game-page-info .game-page-teams .team-2 .team-logo{
+    float:right;
+    vertical-align:middle;
+    text-align:center;
+    width:68px;
+    height:68px;
+    line-height:62px;
+    padding:2px;
+    -moz-border-radius-bottomright:5px;
+    -webkit-border-bottom-right-radius:5px;
+    border-bottom-right-radius:5px
+}
+.game-page .game-page-container .game-page-info .game-page-teams .team-2 .team-logo img,#webview .game-page-container .game-page-info .game-page-teams .team-2 .team-logo img{
+    vertical-align:middle;
+    width:64px
+}
+.game-page .game-page-container .game-page-info .game-page-teams .team-2 .team-info,#webview .game-page-container .game-page-info .game-page-teams .team-2 .team-info{
+    position:relative;
+    color:#fff;
+    border-left:1px #343537 solid;
+    border-right:1px #343537 solid;
+    height:68px;
+    text-align:right;
+    margin:0 68px 0 100px
+}
+.game-page .game-page-container .game-page-info .game-page-teams .team-2 .team-score,#webview .game-page-container .game-page-info .game-page-teams .team-2 .team-score{
+    float:left;
+    -moz-border-radius-bottomleft:5px;
+    -webkit-border-bottom-left-radius:5px;
+    border-bottom-left-radius:5px
+}
+.game-page .game-page-box-none,.game-page .game-page-preview-recap-none,#webview .game-page-box-none,#webview .game-page-preview-recap-none{
+    display:none;
+    background-color:#fff;
+    padding:10px;
+    text-align:center;
+    font:19px "Pill-Gothic-Bold",Arial,sans-serif
+}
+.game-page .game-page-box-stats,#webview .game-page-box-stats{
+    background-color:#fff;
+    position:relative
+}
+.game-page .game-page-box-stats #hitting-table,.game-page .game-page-box-stats #pitching-table,#webview .game-page-box-stats #hitting-table,#webview .game-page-box-stats #pitching-table{
+    display:none
+}
+.game-page .game-page-box-stats .stats-table-container,#webview .game-page-box-stats .stats-table-container{
+    margin-bottom:0px
+}
+.game-page .game-page-box-stats .stats-table-container.last .stats-table-scrollable tbody tr.last,#webview .game-page-box-stats .stats-table-container.last .stats-table-scrollable tbody tr.last{
+    border-bottom:1px solid #dcdee0
+}
+.game-page .game-page-box-stats .stats-table-container.last .stats-table-scrollable tbody tr.last td:first-child,#webview .game-page-box-stats .stats-table-container.last .stats-table-scrollable tbody tr.last td:first-child{
+    border-bottom:1px solid #dcdee0
+}
+.game-page .game-page-box-stats .game-info-summary,#webview .game-page-box-stats .game-info-summary{
+    background-color:#f0f1f3;
+    border:1px solid #c5c5c9;
+    font-size:13px
+}
+.game-page .game-page-box-stats .red-header,#webview .game-page-box-stats .red-header{
+    line-height:24px
+}
+.game-page .game-page-box-stats .dark-header,#webview .game-page-box-stats .dark-header{
+    color:#fff;
+    background-color:#27292b;
+    padding:5px 10px 5px 10px;
+    margin:0 0 5px 0;
+    display:block;
+    -moz-border-radius-topleft:3px;
+    -webkit-border-top-left-radius:3px;
+    border-top-left-radius:3px;
+    -moz-border-radius-topright:3px;
+    -webkit-border-top-right-radius:3px;
+    border-top-right-radius:3px
+}
+.game-page .game-page-box-stats .dark-header h4,#webview .game-page-box-stats .dark-header h4{
+    font-family:"Pill-Gothic-Bold",Arial,sans-serif;
+    font-size:1.1em;
+    font-weight:normal
+}
+.game-page .game-page-box-stats #scoring-summary,#webview .game-page-box-stats #scoring-summary{
+    margin-top:20px;
+    margin-bottom:20px
+}
+.game-page .game-page-box-stats #scoring-summary table .play-time,.game-page .game-page-box-stats #scoring-summary table .play-score,#webview .game-page-box-stats #scoring-summary table .play-time,#webview .game-page-box-stats #scoring-summary table .play-score{
+    width:54px
+}
+.game-page .game-page-box-stats #scoring-summary table .play-team,#webview .game-page-box-stats #scoring-summary table .play-team{
+    width:95px;
+    padding:7px 0
+}
+.game-page .game-page-box-stats #scoring-summary table .play-details,#webview .game-page-box-stats #scoring-summary table .play-details{
+    text-align:left
+}
+.game-page .game-page-box-stats #scoring-summary table .no-scoring,#webview .game-page-box-stats #scoring-summary table .no-scoring{
+    text-align:center
+}
+.game-page .game-page-box-stats #team-comparison,#webview .game-page-box-stats #team-comparison{
+    margin-top:10px
+}
+.game-page .game-page-box-stats #team-comparison .stats-table tr td,.game-page .game-page-box-stats #team-comparison .stats-table tr th,#webview .game-page-box-stats #team-comparison .stats-table tr td,#webview .game-page-box-stats #team-comparison .stats-table tr th{
+    width:33%
+}
+.game-page .game-page-box-stats #team-comparison .stats-table tr td:first-child,#webview .game-page-box-stats #team-comparison .stats-table tr td:first-child{
+    text-align:center
+}
+.game-page .game-page-box-stats #team-comparison .stats-table tr th,#webview .game-page-box-stats #team-comparison .stats-table tr th{
+    background:#dcdee0;
+    color:#323232
+}
+.game-page .game-page-box-stats .stats-copyright,#webview .game-page-box-stats .stats-copyright{
+    margin-top:20px
+}
+.game-page .game-page-box-stats.football,#webview .game-page-box-stats.football{
+    margin-top:10px
+}
+.game-page .game-page-stats-nav,#webview .game-page-stats-nav{
+    display:inline-block;
+    padding:10px 0 10px 0;
+    border-bottom:1px solid #dcdee0;
+    width:100%;
+    font:19px "Pill-Gothic-Bold",Arial,sans-serif
+}
+.game-page .game-page-stats-nav li,#webview .game-page-stats-nav li{
+    float:left;
+    display:block;
+    margin:0;
+    border-right:1px solid #c5c5c9;
+    outline-color:transparent
+}
+.game-page .game-page-stats-nav li a,#webview .game-page-stats-nav li a{
+    color:#adadb2;
+    outline-color:transparent;
+    padding:0 10px;
+    text-transform:uppercase
+}
+.game-page .game-page-stats-nav li:first-child a,#webview .game-page-stats-nav li:first-child a{
+    padding-left:0
+}
+.game-page .game-page-stats-nav .ui-tabs-active,#webview .game-page-stats-nav .ui-tabs-active{
+    background-color:#fff;
+    border-bottom:0px
+}
+.game-page .game-page-stats-nav .ui-tabs-active a,#webview .game-page-stats-nav .ui-tabs-active a{
+    color:#323232
+}
+.game-page .game-page-stats-table,#webview .game-page-stats-table{
+    position:relative
+}
+.game-page .game-page-stats-table tr.home-team,#webview .game-page-stats-table tr.home-team{
+    display:none
+}
+.game-page .game-page-team-select,#webview .game-page-team-select{
+    display:inline-block;
+    width:100%;
+    text-align:center;
+    font:19px "Pill-Gothic-Bold",Arial,sans-serif
+}
+.game-page .game-page-team-select li,#webview .game-page-team-select li{
+    width:50%;
+    line-height:42px;
+    background-color:#f0f1f3;
+    border-right:1px solid #c5c5c9;
+    border-bottom:1px #dddee0 solid;
+    border-top:1px #dddee0 solid;
+    float:left;
+    display:block;
+    margin:0;
+    outline-color:transparent;
+    cursor:pointer
+}
+.game-page .game-page-team-select li:last-child,#webview .game-page-team-select li:last-child{
+    border-right:none
+}
+.game-page .game-page-team-select li a,#webview .game-page-team-select li a{
+    color:#85868b;
+    display:block;
+    outline:0
+}
+.game-page .game-page-team-select li a.active,#webview .game-page-team-select li a.active{
+    background-color:#fff;
+    border-bottom:0px;
+    color:#323232
+}
+.game-page .game-page-preview-recap .game-page-preview-recap-text p,#webview .game-page-preview-recap .game-page-preview-recap-text p{
+    padding:10px 0;
+    color:#323232;
+    font-size:15px;
+    line-height:19px
+}
+.game-page .article-media,#webview .article-media{
+    margin-top:20px
+}
+#webview{
+    overflow:visible
+}
+@media screen and (max-width: 767px){
+    .game-page .game-page-log .game-page-log-wrapper,#webview .game-page-log .game-page-log-wrapper{
+        padding:10px
+    }
+    .game-page .game-page-container .game-page-header,#webview .game-page-container .game-page-header{
+        border-bottom:1px solid #494a4c
+    }
+    .game-page .game-page-container .game-page-stats .game-page-stats-container,#webview .game-page-container .game-page-stats .game-page-stats-container{
+        padding:0
+    }
+    .game-page .game-page-container .game-page-stats .game-page-stats-container .game-wrapper .game-ingame,#webview .game-page-container .game-page-stats .game-page-stats-container .game-wrapper .game-ingame{
+        float:none;
+        width:100%;
+        padding-left:10px;
+        padding-right:10px
+    }
+    .game-page .game-page-container .game-page-stats .game-page-stats-container .game-wrapper .game-last-play-container .game-last-play,#webview .game-page-container .game-page-stats .game-page-stats-container .game-wrapper .game-last-play-container .game-last-play{
+        padding:5px 10px 6px 10px
+    }
+    .game-page .game-page-container .game-page-stats .game-page-stats-container .game-wrapper .game-stats-table,#webview .game-page-container .game-page-stats .game-page-stats-container .game-wrapper .game-stats-table{
+        width:100%
+    }
+    .game-page .game-page-container .game-page-stats .game-page-stats-container .game-wrapper .game-stats,#webview .game-page-container .game-page-stats .game-page-stats-container .game-wrapper .game-stats{
+        float:none;
+        padding:0 10px;
+        width:100%
+    }
+    .game-page .game-page-container .game-page-stats .game-page-stats-container .game-wrapper .game-stats .game-stats-table tr.boxscore-header th,#webview .game-page-container .game-page-stats .game-page-stats-container .game-wrapper .game-stats .game-stats-table tr.boxscore-header th{
+        padding-left:4px;
+        padding-right:4px
+    }
+    .game-page .game-page-container .game-page-stats .game-page-stats-container .game-wrapper .game-stats .game-stats-table tr td.stats,#webview .game-page-container .game-page-stats .game-page-stats-container .game-wrapper .game-stats .game-stats-table tr td.stats{
+        padding:0 4px
+    }
+    .game-page .game-page-container .game-page-stats .game-page-stats-container .game-wrapper>div:last-child,#webview .game-page-container .game-page-stats .game-page-stats-container .game-wrapper>div:last-child{
+        padding-bottom:10px;
+        width:100%
+    }
+    .game-page .game-page-container .game-page-info,#webview .game-page-container .game-page-info{
+        background:#27292b;
+        padding:0
+    }
+    .game-page .game-page-container .game-page-info .game-page-teams .team-1,.game-page .game-page-container .game-page-info .game-page-teams .team-2,#webview .game-page-container .game-page-info .game-page-teams .team-1,#webview .game-page-container .game-page-info .game-page-teams .team-2{
+        width:100%;
+        float:none;
+        padding:0px 15px 0 15px
+    }
+    .game-page .game-page-container .game-page-info .game-page-teams .team-1 .team-info,.game-page .game-page-container .game-page-info .game-page-teams .team-2 .team-info,#webview .game-page-container .game-page-info .game-page-teams .team-1 .team-info,#webview .game-page-container .game-page-info .game-page-teams .team-2 .team-info{
+        height:45px;
+        margin:0 80px 0 45px
+    }
+    .game-page .game-page-container .game-page-info .game-page-teams .team-1 .team-info ul .team-city,.game-page .game-page-container .game-page-info .game-page-teams .team-2 .team-info ul .team-city,#webview .game-page-container .game-page-info .game-page-teams .team-1 .team-info ul .team-city,#webview .game-page-container .game-page-info .game-page-teams .team-2 .team-info ul .team-city{
+        display:none
+    }
+    .game-page .game-page-container .game-page-info .game-page-teams .team-1 .team-info ul .team-name,.game-page .game-page-container .game-page-info .game-page-teams .team-2 .team-info ul .team-name,#webview .game-page-container .game-page-info .game-page-teams .team-1 .team-info ul .team-name,#webview .game-page-container .game-page-info .game-page-teams .team-2 .team-info ul .team-name{
+        display:none
+    }
+    .game-page .game-page-container .game-page-info .game-page-teams .team-1 .team-info ul .team-name-mobile,.game-page .game-page-container .game-page-info .game-page-teams .team-2 .team-info ul .team-name-mobile,#webview .game-page-container .game-page-info .game-page-teams .team-1 .team-info ul .team-name-mobile,#webview .game-page-container .game-page-info .game-page-teams .team-2 .team-info ul .team-name-mobile{
+        display:block
+    }
+    .game-page .game-page-container .game-page-info .game-page-teams .team-1 .team-info.wjc ul,.game-page .game-page-container .game-page-info .game-page-teams .team-2 .team-info.wjc ul,#webview .game-page-container .game-page-info .game-page-teams .team-1 .team-info.wjc ul,#webview .game-page-container .game-page-info .game-page-teams .team-2 .team-info.wjc ul{
+        line-height:20px
+    }
+    .game-page .game-page-container .game-page-info .game-page-teams .team-1 .team-score,.game-page .game-page-container .game-page-info .game-page-teams .team-2 .team-score,#webview .game-page-container .game-page-info .game-page-teams .team-1 .team-score,#webview .game-page-container .game-page-info .game-page-teams .team-2 .team-score{
+        line-height:45px;
+        width:80px;
+        font-size:36px
+    }
+    .game-page .game-page-container .game-page-info .game-page-teams .team-1 .team-logo,.game-page .game-page-container .game-page-info .game-page-teams .team-2 .team-logo,#webview .game-page-container .game-page-info .game-page-teams .team-1 .team-logo,#webview .game-page-container .game-page-info .game-page-teams .team-2 .team-logo{
+        width:45px;
+        height:45px;
+        line-height:38px
+    }
+    .game-page .game-page-container .game-page-info .game-page-teams .team-1 .team-logo img,.game-page .game-page-container .game-page-info .game-page-teams .team-2 .team-logo img,#webview .game-page-container .game-page-info .game-page-teams .team-1 .team-logo img,#webview .game-page-container .game-page-info .game-page-teams .team-2 .team-logo img{
+        width:40px
+    }
+    .game-page .game-page-container .game-page-info .game-page-teams .team-1 .gloss,.game-page .game-page-container .game-page-info .game-page-teams .team-2 .gloss,#webview .game-page-container .game-page-info .game-page-teams .team-1 .gloss,#webview .game-page-container .game-page-info .game-page-teams .team-2 .gloss{
+        height:23px
+    }
+    .game-page .game-page-container .game-page-info .game-page-teams .game-location,#webview .game-page-container .game-page-info .game-page-teams .game-location{
+        border-bottom:1px solid #494a4c
+    }
+    .game-page .game-page-container .game-page-info .game-page-teams .team-1,#webview .game-page-container .game-page-info .game-page-teams .team-1{
+        padding-bottom:10px
+    }
+    .game-page .game-page-container .game-page-info .game-page-teams .team-2 .team-info,#webview .game-page-container .game-page-info .game-page-teams .team-2 .team-info{
+        text-align:left
+    }
+    .game-page .game-page-container .game-page-info .game-page-teams .team-2 .team-score,#webview .game-page-container .game-page-info .game-page-teams .team-2 .team-score{
+        float:right;
+        border-corner-radius:0;
+        -moz-border-radius-bottomleft:0px;
+        -webkit-border-bottom-left-radius:0px;
+        border-bottom-left-radius:0px;
+        -moz-border-radius-bottomright:5px;
+        -webkit-border-bottom-right-radius:5px;
+        border-bottom-right-radius:5px
+    }
+    .game-page .game-page-container .game-page-info .game-page-teams .team-2 .team-logo,#webview .game-page-container .game-page-info .game-page-teams .team-2 .team-logo{
+        float:left;
+        border-corner-radius:0;
+        -moz-border-radius-bottomright:0px;
+        -webkit-border-bottom-right-radius:0px;
+        border-bottom-right-radius:0px;
+        -moz-border-radius-bottomleft:5px;
+        -webkit-border-bottom-left-radius:5px;
+        border-bottom-left-radius:5px
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 950px){
+    .game-page .game-page-container .game-page-stats .game-page-stats-container .game-wrapper .game-ingame,#webview .game-page-container .game-page-stats .game-page-stats-container .game-wrapper .game-ingame{
+        float:none;
+        height:auto;
+        width:auto;
+        overflow:hidden;
+        min-width:275px;
+        vertical-align:top;
+        padding-right:10px;
+        padding-left:10px
+    }
+}
+@media screen and (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5), (min-resolution: 96dpi), (min-resolution: 1.5dppx){
+    .game-page .game-page-container .game-page-stats .game-page-stats-container .game-stats .game-stats-table .extra-next,.game-page .game-page-container .game-page-stats .game-page-stats-container .game-stats .game-stats-table .extra-prev,#webview .game-page-container .game-page-stats .game-page-stats-container .game-stats .game-stats-table .extra-next,#webview .game-page-container .game-page-stats .game-page-stats-container .game-stats .game-stats-table .extra-prev{
+        background-image:url(//tsnimages.tsn.ca/ImageProvider/AssetImage?seoid=tsn-sprite-2x) !important;
+        background-repeat:no-repeat;
+        background-size:800px 500px !important
+    }
+}
+.teampage-header-container{
+    background-color:#333;
+    padding:10px 10px 0 10px;
+    border-top:1px solid #494a4c
+}
+.teampage-header-container .team{
+    width:100%;
+    background:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwLjYiLz4KICAgIDxzdG9wIG9mZnNldD0iMzUlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIiBzdG9wLW9wYWNpdHk9IjAuNSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIiBzdG9wLW9wYWNpdHk9IjAuMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background:-moz-linear-gradient(top, rgba(255,255,255,0.6) 0%, rgba(255,255,255,0.5) 35%, rgba(255,255,255,0.1) 100%);
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255,255,255,0.6)), color-stop(35%, rgba(255,255,255,0.5)), color-stop(100%, rgba(255,255,255,0.1)));
+    background:-webkit-linear-gradient(top, rgba(255,255,255,0.6) 0%, rgba(255,255,255,0.5) 35%, rgba(255,255,255,0.1) 100%);
+    background:-o-linear-gradient(top, rgba(255,255,255,0.6) 0%, rgba(255,255,255,0.5) 35%, rgba(255,255,255,0.1) 100%);
+    background:-ms-linear-gradient(top, rgba(255,255,255,0.6) 0%, rgba(255,255,255,0.5) 35%, rgba(255,255,255,0.1) 100%);
+    background:linear-gradient(to bottom, rgba(255,255,255,0.6) 0%,rgba(255,255,255,0.5) 35%,rgba(255,255,255,0.1) 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#99ffffff', endColorstr='#1affffff',GradientType=0 );
+    overflow:hidden;
+    width:100%;
+    float:left;
+    position:relative;
+    -moz-border-radius-bottomleft:5px;
+    -webkit-border-bottom-left-radius:5px;
+    border-bottom-left-radius:5px
+}
+.teampage-header-container .team .team-logo{
+    float:left;
+    background-color:#fff;
+    vertical-align:middle;
+    text-align:center;
+    width:68px;
+    height:68px;
+    padding:2px;
+    -moz-border-radius-bottomleft:5px;
+    -webkit-border-bottom-left-radius:5px;
+    border-bottom-left-radius:5px
+}
+.teampage-header-container .team .team-logo img{
+    vertical-align:middle;
+    width:64px
+}
+.teampage-header-container .team .team-stats{
+    position:absolute;
+    right:0px;
+    height:68px;
+    line-height:90px
+}
+.teampage-header-container .team .team-stats ul{
+    display: inline-block;
+    margin: 10px 0;
+    width: 100%;
+    list-style: none;
+    padding: 0;
+}
+.teampage-header-container .team .team-stats ul li{
+    float:left;
+    color:#fff;
+    padding:0 20px;
+    border-right:1px solid #fff;
+    border-right:1px solid rgba(255,255,255,0.25)
+}
+.teampage-header-container .team .team-stats ul li:last-child{
+    border-right:0px
+}
+.teampage-header-container .team .team-stats ul li span{
+    font-family:"Pill-Gothic-Bold",Arial,sans-serif;
+    font-size:32px;
+    line-height:32px;
+    display:block;
+    text-align:center
+}
+.teampage-header-container .team .team-stats ul li .stat-name{
+    font:13px Arial,sans-serif;
+    line-height:14px;
+    padding:3px 0 0 0
+}
+.teampage-header-container .team .logo-gradient{
+    background:#fff;
+    background:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUxJSIgc3RvcC1jb2xvcj0iI2YyZjJmMyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmMmYyZjMiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background:-moz-linear-gradient(top, #fff 0%, #fff 50%, #f2f2f3 51%, #f2f2f3 100%);
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #fff), color-stop(50%, #fff), color-stop(51%, #f2f2f3), color-stop(100%, #f2f2f3));
+    background:-webkit-linear-gradient(top, #fff 0%, #fff 50%, #f2f2f3 51%, #f2f2f3 100%);
+    background:-o-linear-gradient(top, #fff 0%, #fff 50%, #f2f2f3 51%, #f2f2f3 100%);
+    background:-ms-linear-gradient(top, #fff 0%, #fff 50%, #f2f2f3 51%, #f2f2f3 100%);
+    background:linear-gradient(to bottom, #ffffff 0%,#ffffff 50%,#f2f2f3 51%,#f2f2f3 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f2f2f3',GradientType=0 )
+}
+.teampage-header-container .team .gloss{
+    height:34px;
+    width:100%;
+    background:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwLjYiLz4KICAgIDxzdG9wIG9mZnNldD0iMzUlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIiBzdG9wLW9wYWNpdHk9IjAuNSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIiBzdG9wLW9wYWNpdHk9IjAuMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background:-moz-linear-gradient(top, rgba(255,255,255,0.6) 0%, rgba(255,255,255,0.5) 35%, rgba(255,255,255,0.1) 100%);
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255,255,255,0.6)), color-stop(35%, rgba(255,255,255,0.5)), color-stop(100%, rgba(255,255,255,0.1)));
+    background:-webkit-linear-gradient(top, rgba(255,255,255,0.6) 0%, rgba(255,255,255,0.5) 35%, rgba(255,255,255,0.1) 100%);
+    background:-o-linear-gradient(top, rgba(255,255,255,0.6) 0%, rgba(255,255,255,0.5) 35%, rgba(255,255,255,0.1) 100%);
+    background:-ms-linear-gradient(top, rgba(255,255,255,0.6) 0%, rgba(255,255,255,0.5) 35%, rgba(255,255,255,0.1) 100%);
+    background:linear-gradient(to bottom, rgba(255,255,255,0.6) 0%,rgba(255,255,255,0.5) 35%,rgba(255,255,255,0.1) 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#99ffffff', endColorstr='#1affffff',GradientType=0 )
+}
+.teampage-header-container .team .team-info{
+    color:#fff;
+    border-left:1px #343537 solid;
+    height:68px;
+    margin:0 0 0 68px
+}
+.teampage-header-container .team .team-info ul{
+    line-height:20px;
+    padding:5px 10px;
+    font-family:"Pill-Gothic-Bold",Arial,sans-serif;
+    color:#fff;
+    text-transform:uppercase;
+    margin-top:-33px
+}
+.teampage-header-container .team .team-info ul .team-city{
+    font:13px Arial,sans-serif;
+    padding:3px 0 0 0
+}
+.teampage-header-container .team .team-info ul .team-name{
+    font-size:26px
+}
+.teampage-header-container .team .team-info ul .team-name-mobile{
+    display:none;
+    font-size:24px
+}
+.teampage-header-container .team .team-info ul .team-record{
+    text-transform:none;
+    font:13px Arial,sans-serif
+}
+.teampage-header-container .team-stats.mobile{
+    float:left;
+    width:100%;
+    display:none;
+    padding-top:7px
+}
+.teampage-header-container .team-stats.mobile ul{
+    display:inline-block;
+    width:100%
+}
+.teampage-header-container .team-stats.mobile ul li{
+    float:left;
+    color:#fff;
+    padding:0 10px;
+    border-right:1px solid rgba(255,255,255,0.25);
+    width:33%
+}
+.teampage-header-container .team-stats.mobile ul li:last-child{
+    border-right:0px
+}
+.teampage-header-container .team-stats.mobile ul li span{
+    font-family:"Pill-Gothic-Bold",Arial,sans-serif;
+    font-size:32px;
+    display:block;
+    text-align:center
+}
+.teampage-header-container .team-stats.mobile ul li .stat-name{
+    font-size:14px
+}
+.teampage-header-container .team-stats.mobile-nfl ul li{
+    width:25%
+}
+.teampage-header-container .team-stats.mobile-nhl ul li{
+    width:25%
+}
+.teampage-header-container .schedule{
+    text-align:center;
+    padding:10px 0px 6px
+}
+.teampage-header-container .schedule .games-container{
+    margin:0 auto;
+    display:inline-block;
+    width:100%
+}
+.teampage-header-container .schedule .games-container .game{
+    float:left;
+    background-color:#fff;
+    width:15.7%;
+    height:138px;
+    margin-right:8px;
+    position:relative;
+    min-width:148px
+}
+.teampage-header-container .schedule .games-container .game.dummy{
+    background-color:transparent
+}
+.teampage-header-container .schedule .games-container .game .game-header{
+    background-color:#525358;
+    color:#fff;
+    min-height:20px;
+    text-transform:uppercase;
+    padding:3px 0 0 8px
+}
+.teampage-header-container .schedule .games-container .game .game-header .date{
+    float:left;
+    font-size:11px;
+    font-family:arial,sans-serif;
+    font-weight:bold;
+    margin: 0;
+}
+.teampage-header-container .schedule .games-container .game .game-header .channel{
+    float:right;
+    width:41px
+}
+.teampage-header-container .schedule .games-container .game .game-header.pre{
+    margin-right:0px
+}
+.teampage-header-container .schedule .games-container .game a{
+    color:#333
+}
+.teampage-header-container .schedule .games-container .game a:hover{
+    text-decoration:none
+}
+.teampage-header-container .schedule .games-container .game a:hover .opponent{
+    text-decoration:underline
+}
+.teampage-header-container .schedule .games-container .game .results{
+    text-align:center
+}
+.teampage-header-container .schedule .games-container .game .results img{
+    width:48px;
+    height:48px
+}
+.teampage-header-container .schedule .games-container .game .results .score{
+    font-size:12px;
+    text-transform:uppercase
+}
+.teampage-header-container .schedule .games-container .game .results .row{
+    display:block
+}
+.teampage-header-container .schedule .games-container .game .results .opponent{
+    font-size:12px
+}
+.teampage-header-container .schedule .games-container .game .results .opponent.no-opponent{
+    margin-top:31px
+}
+.teampage-header-container .schedule .games-container .game .results .acronym{
+    text-transform:uppercase
+}
+.teampage-header-container .schedule .games-container .game .start-time,.teampage-header-container .schedule .games-container .game .playoff-series{
+    color:#adadb2;
+    font-size:12px
+}
+.teampage-header-container .schedule .games-container .game .start-time{
+    text-transform:uppercase
+}
+.teampage-header-container .schedule .games-container .pre .results,.teampage-header-container .schedule .games-container .post .results{
+    padding-top:10px
+}
+.teampage-header-container .schedule .games-container .pre{
+    margin-left:0px;
+    margin-right:10px
+}
+.teampage-header-container .schedule .games-container .pre .game-header{
+    background-color:#DCDEE0;
+    color:#85878C;
+    margin-right:0px
+}
+.teampage-header-container .schedule .games-container .pre.last{
+    margin-right:0px
+}
+.teampage-header-container .schedule .games-container .featured{
+    width:32.65%
+}
+.teampage-header-container .schedule .games-container .featured .game-header{
+    background-color:#b90a0a
+}
+.teampage-header-container .schedule .games-container .featured .final{
+    background-color:#525358
+}
+.teampage-header-container .schedule .games-container .featured .pre{
+    background-color:#DCDEE0;
+    color:#85878C;
+    margin-right:0px
+}
+.teampage-header-container .schedule .games-container .featured .results .no-opponent{
+    margin-top:33px
+}
+.teampage-header-container .schedule .games-container .featured .results .score-container .featured-team{
+    float:left;
+    width:33%;
+    padding-top:5px
+}
+.teampage-header-container .schedule .games-container .featured .results .score-container .featured-team img{
+    width:48px;
+    height:48px
+}
+.teampage-header-container .schedule .games-container .featured .results .score-container .featured-team .acronym{
+    display:block
+}
+.teampage-header-container .schedule .games-container .featured .results .score-container .status{
+    float:left;
+    width:33%
+}
+.teampage-header-container .schedule .games-container .featured .results .score-container .status span{
+    display:inline-block
+}
+.teampage-header-container .schedule .games-container .featured .results .score-container .status h1{
+    font-size:28px;
+    height:28px;
+    text-transform:none;
+    margin: 0px;
+}
+.teampage-header-container .schedule .games-container .featured .results .score-container .status .score{
+    font-size:19px;
+    padding-top:20px;
+    display:block
+}
+.teampage-header-container .schedule .games-container .featured .results .score-container .status.playoffs .score{
+    padding-top:10px
+}
+.teampage-header-container .schedule .games-container .featured .game-page-link{
+    display:block;
+    position:absolute;
+    bottom:0;
+    width:100%;
+    font:bold 13px Arial,sans-serif;
+    background-color:#f0f1f2;
+    border-top:1px solid #dcdee0;
+    padding:5px 0 6px;
+    text-transform:uppercase
+}
+.teampage-header-container .schedule .games-container .featured .game-page-link a{
+    color:#333
+}
+.teampage-header-container .schedule .games-container .featured .game-page-link a:before{
+    content:"";
+    display:inline-block;
+    width:8px;
+    height:10px;
+    margin:0 3px -1px 0;
+    background-image:url(//tsnimages.tsn.ca/ImageProvider/AssetImage?seoid=tsn-sprite);
+    background-repeat:no-repeat;
+    background-position:-262px -90px
+}
+.teampage-header-container .schedule .games-container.double-header .game.pre{
+    margin-right:0px
+}
+.teampage-header-container .schedule .games-container.double-header .game.pre.last{
+    display:none
+}
+.teampage-header-container .schedule .games-container.double-header .game.post.first{
+    display:none
+}
+@media screen and (max-width: 1001px){
+    .teampage-header-container .schedule .games-container.double-header{
+        width:100%
+    }
+    .teampage-header-container .schedule .games-container.double-header .game.featured{
+        width:48.8%
+    }
+    .teampage-header-container .schedule .games-container.double-header .game.featured.last{
+        margin-right:0px
+    }
+    .teampage-header-container .schedule .games-container.double-header .game.pre,.teampage-header-container .schedule .games-container.double-header .game.post{
+        display:none
+    }
+    .teampage-header-container .schedule .games-container{
+        width:152%
+    }
+    .teampage-header-container .schedule .games-container .game.post:nth-child(1){
+        display:none
+    }
+    .teampage-header-container .schedule .games-container .game.pre{
+        margin-right:0
+    }
+    .teampage-header-container .schedule .games-container .game.pre.last{
+        display:none
+    }
+}
+@media screen and (max-width: 900px){
+    #league-stats-content #hitting .stats-table-top .stats-filter:nth-child(even),#league-stats-content #pitching .stats-table-top .stats-filter:nth-child(even),#league-stats-content #fielding .stats-table-top .stats-filter:nth-child(even),#league-stats-content #hittingExt .stats-table-top .stats-filter:nth-child(even),#league-stats-content #pitchingExt .stats-table-top .stats-filter:nth-child(even){
+        float:none !important
+    }
+}
+@media screen and (max-width: 767px){
+    .teampage-header-container{
+        padding:10px 10px 0 10px
+    }
+    .teampage-header-container .team .team-stats{
+        display:none
+    }
+    .teampage-header-container .team-stats.mobile{
+        display:block
+    }
+    .teampage-header-container .schedule{
+        padding:10px 0
+    }
+    .teampage-header-container .schedule .games-container .game.post,.teampage-header-container .schedule .games-container .game.pre{
+        display:none
+    }
+    .teampage-header-container .schedule .games-container .game-header{
+        display:block
+    }
+    .teampage-header-container .schedule .games-container .featured{
+        width:66%;
+        float:none;
+        display:block
+    }
+    .teampage-header-container .schedule .games-container.double-header .game.featured{
+        margin-right:0px;
+        width:100%
+    }
+}
+@media screen and (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5), (min-resolution: 96dpi), (min-resolution: 1.5dppx){
+    .teampage-header-container img{
+        width:54px
+    }
+    .teampage-header-container .schedule .games-container .featured .game-page-link a:before{
+        background-image:url(//tsnimages.tsn.ca/ImageProvider/AssetImage?seoid=tsn-sprite-2x) !important;
+        background-repeat:no-repeat;
+        background-size:800px 500px !important;
+        margin:0 3px 0 0
+    }
+}
+.playerpage-header-container{
+    background-color:#333;
+    padding:10px 20px 0 20px;
+    border-top:1px solid #494a4c
+}
+.playerpage-header-container .player{
+    width:100%;
+    background:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwLjYiLz4KICAgIDxzdG9wIG9mZnNldD0iMzUlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIiBzdG9wLW9wYWNpdHk9IjAuNSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIiBzdG9wLW9wYWNpdHk9IjAuMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background:-moz-linear-gradient(top, rgba(255,255,255,0.6) 0%, rgba(255,255,255,0.5) 35%, rgba(255,255,255,0.1) 100%);
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255,255,255,0.6)), color-stop(35%, rgba(255,255,255,0.5)), color-stop(100%, rgba(255,255,255,0.1)));
+    background:-webkit-linear-gradient(top, rgba(255,255,255,0.6) 0%, rgba(255,255,255,0.5) 35%, rgba(255,255,255,0.1) 100%);
+    background:-o-linear-gradient(top, rgba(255,255,255,0.6) 0%, rgba(255,255,255,0.5) 35%, rgba(255,255,255,0.1) 100%);
+    background:-ms-linear-gradient(top, rgba(255,255,255,0.6) 0%, rgba(255,255,255,0.5) 35%, rgba(255,255,255,0.1) 100%);
+    background:linear-gradient(to bottom, rgba(255,255,255,0.6) 0%,rgba(255,255,255,0.5) 35%,rgba(255,255,255,0.1) 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#99ffffff', endColorstr='#1affffff',GradientType=0 );
+    overflow:hidden;
+    width:100%;
+    float:left;
+    -moz-border-radius-bottomright:5px;
+    -webkit-border-bottom-right-radius:5px;
+    border-bottom-right-radius:5px
+}
+.playerpage-header-container .player .player-image{
+    float:left;
+    background-color:#fff;
+    vertical-align:middle;
+    text-align:center;
+    width:68px;
+    min-width:68px;
+    height:68px;
+    padding:0;
+    overflow:hidden
+}
+.playerpage-header-container .player .player-image img{
+    width:68px;
+    height:68px
+}
+.playerpage-header-container .player .team-logo{
+    float:right;
+    background-color:#fff;
+    vertical-align:middle;
+    text-align:center;
+    width:68px;
+    height:68px;
+    padding:2px;
+    -moz-border-radius-bottomright:5px;
+    -webkit-border-bottom-right-radius:5px;
+    border-bottom-right-radius:5px
+}
+.playerpage-header-container .player .team-logo img{
+    vertical-align:middle;
+    width:64px
+}
+.playerpage-header-container .player .team-logo a{
+    display:block
+}
+.playerpage-header-container .player .info-container{
+    height:68px
+}
+.playerpage-header-container .player .info-container .player-basic-info{
+    vertical-align:middle;
+    float:left;
+    line-height:20px;
+    padding:5px 10px;
+    font-family:"Pill-Gothic-Bold",Arial,sans-serif;
+    color:#fff;
+    text-transform:uppercase;
+    margin-top:-33px;
+    display:inline-block
+}
+.playerpage-header-container .player .info-container .player-basic-info .first-name{
+    font:13px Arial,sans-serif;
+    padding:3px 0 0 0
+}
+.playerpage-header-container .player .info-container .player-basic-info .last-name{
+    font-size:26px;
+    line-height:23px
+}
+.playerpage-header-container .player .info-container .player-basic-info .player-info{
+    text-transform:none;
+    font:13px Arial,sans-serif
+}
+.playerpage-header-container .player .info-container .player-stats{
+    float:right;
+    display:inline-block;
+    margin-top:-28px
+}
+.playerpage-header-container .player .info-container .player-stats li{
+    float:left;
+    color:#fff;
+    padding:0 10px;
+    margin:4px 0 0 0;
+    border-right:1px solid #fff;
+    border-right:1px solid rgba(255,255,255,0.25);
+    width:85px
+}
+.playerpage-header-container .player .info-container .player-stats li:nth-child(3){
+    border-right:0px
+}
+.playerpage-header-container .player .info-container .player-stats li span{
+    font-family:"Pill-Gothic-Bold",Arial,sans-serif;
+    font-size:32px;
+    line-height:32px;
+    display:block;
+    text-align:center
+}
+.playerpage-header-container .player .info-container .player-stats li .stat-name{
+    font:13px Arial,sans-serif;
+    line-height:13px;
+    padding:3px 0 0 0
+}
+.playerpage-header-container .player .info-container .player-stats.pitchers li:nth-child(2){
+    border-right:0px
+}
+.playerpage-header-container .player .logo-gradient{
+    background:#fff;
+    background:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUxJSIgc3RvcC1jb2xvcj0iI2YyZjJmMyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmMmYyZjMiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background:-moz-linear-gradient(top, #fff 0%, #fff 50%, #f2f2f3 51%, #f2f2f3 100%);
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #fff), color-stop(50%, #fff), color-stop(51%, #f2f2f3), color-stop(100%, #f2f2f3));
+    background:-webkit-linear-gradient(top, #fff 0%, #fff 50%, #f2f2f3 51%, #f2f2f3 100%);
+    background:-o-linear-gradient(top, #fff 0%, #fff 50%, #f2f2f3 51%, #f2f2f3 100%);
+    background:-ms-linear-gradient(top, #fff 0%, #fff 50%, #f2f2f3 51%, #f2f2f3 100%);
+    background:linear-gradient(to bottom, #ffffff 0%,#ffffff 50%,#f2f2f3 51%,#f2f2f3 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f2f2f3',GradientType=0 )
+}
+.playerpage-header-container .player .gloss{
+    height:34px;
+    background:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwLjYiLz4KICAgIDxzdG9wIG9mZnNldD0iMzUlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIiBzdG9wLW9wYWNpdHk9IjAuNSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIiBzdG9wLW9wYWNpdHk9IjAuMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background:-moz-linear-gradient(top, rgba(255,255,255,0.6) 0%, rgba(255,255,255,0.5) 35%, rgba(255,255,255,0.1) 100%);
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255,255,255,0.6)), color-stop(35%, rgba(255,255,255,0.5)), color-stop(100%, rgba(255,255,255,0.1)));
+    background:-webkit-linear-gradient(top, rgba(255,255,255,0.6) 0%, rgba(255,255,255,0.5) 35%, rgba(255,255,255,0.1) 100%);
+    background:-o-linear-gradient(top, rgba(255,255,255,0.6) 0%, rgba(255,255,255,0.5) 35%, rgba(255,255,255,0.1) 100%);
+    background:-ms-linear-gradient(top, rgba(255,255,255,0.6) 0%, rgba(255,255,255,0.5) 35%, rgba(255,255,255,0.1) 100%);
+    background:linear-gradient(to bottom, rgba(255,255,255,0.6) 0%,rgba(255,255,255,0.5) 35%,rgba(255,255,255,0.1) 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#99ffffff', endColorstr='#1affffff',GradientType=0 )
+}
+.playerpage-header-container .player-stats-container{
+    display:none
+}
+.playerpage-header-container .player-info-detail{
+    float:left;
+    width:100%;
+    padding-top:7px;
+    padding-bottom:3px;
+    color:#adadb2
+}
+.playerpage-header-container .player-info-detail ul{
+    display:inline-block;
+    width:100%
+}
+.playerpage-header-container .player-info-detail ul li{
+    float:left;
+    padding:0 8px;
+    border-right:1px solid #3e4045;
+    width:12.5%;
+    min-height:54px
+}
+.playerpage-header-container .player-info-detail ul li span{
+    font-family:"Pill-Gothic-Bold",Arial,sans-serif;
+    font-size:25px;
+    display:block;
+    text-align:center;
+    text-transform:uppercase;
+    line-height:18px
+}
+.playerpage-header-container .player-info-detail ul li .stat-name{
+    font-size:12px;
+    font-family:Arial,sans-serif
+}
+.playerpage-header-container .player-info-detail ul li .value-desc{
+    font-size:16px
+}
+.playerpage-header-container .player-info-detail ul li .smaller{
+    font-size:14px;
+    display:inline-block
+}
+.playerpage-header-container .player-info-detail ul li:nth-child(8){
+    border-right:0px
+}
+.playerpage-header-container .player-info-detail ul li:first-child span{
+    line-height:22px
+}
+.playerpage-header-container .player-info-detail ul .two-line{
+    padding:10px 0px
+}
+.playerpage-header-container .player-info-detail.mobile{
+    display:none
+}
+#PageTabs.Player .page-nav .more-nav ul{
+    top:444px;
+    left:177px
+}
+#no-bio{
+    display:none
+}
+#playerBio table .detail-cells td{
+    text-align:left
+}
+#playerBio table .detail-cells td:first-child{
+    border-right:1px solid #dcdee0;
+    width:19%
+}
+#playerBio .stats-table{
+    margin-bottom:20px
+}
+.player-log-none{
+    display:none;
+    text-align:center;
+    font:19px "Pill-Gothic-Bold",Arial,sans-serif;
+    margin-top:20px
+}
+.player-log{
+    display:none
+}
+.player-log .stats-table td{
+    border-right:1px solid #dcdee0
+}
+.player-log .stats-table td:first-child{
+    text-transform:uppercase;
+    padding:10px 5px
+}
+@media screen and (max-width: 1001px){
+    .playerpage-header-container .player-info-detail ul li{
+        width:16.5%
+    }
+    .playerpage-header-container .player-info-detail ul li:nth-child(7){
+        display:none
+    }
+    .playerpage-header-container .player-info-detail ul li:nth-child(8){
+        display:none
+    }
+    .player-stats .stats-table .desktop{
+        display:none
+    }
+}
+@media screen and (max-width: 737px){
+    .playerpage-header-container .player .player-basic-info .pob{
+        display:none
+    }
+    .playerpage-header-container .player .info-container{
+        margin-right:0
+    }
+    .playerpage-header-container .player .info-container .player-stats{
+        display:none
+    }
+    .playerpage-header-container .player .team-logo{
+        display:none
+    }
+    .playerpage-header-container .player-stats-container{
+        float:left;
+        width:100%;
+        display:block;
+        padding-top:7px
+    }
+    .playerpage-header-container .player-stats-container ul{
+        display:inline-block;
+        width:100%
+    }
+    .playerpage-header-container .player-stats-container ul li{
+        float:left;
+        color:#fff;
+        padding:0 10px;
+        border-right:1px solid rgba(255,255,255,0.25);
+        width:33%
+    }
+    .playerpage-header-container .player-stats-container ul li:nth-child(3){
+        border-right:0px
+    }
+    .playerpage-header-container .player-stats-container ul li span{
+        font-size:32px;
+        display:block;
+        text-align:center
+    }
+    .playerpage-header-container .player-stats-container ul li .stat-name{
+        font-size:14px;
+        font-family:Arial,sans-serif
+    }
+    .playerpage-header-container .player-stats-container ul li .value{
+        font-family:"Pill-Gothic-Bold",Arial,sans-serif
+    }
+    .playerpage-header-container .player-stats-container .player-stats.pitchers li{
+        width:50%
+    }
+    .playerpage-header-container .player-stats-container .player-stats.pitchers li:nth-child(2){
+        border-right:0px
+    }
+    .playerpage-header-container .player-info-detail{
+        display:none
+    }
+    .playerpage-header-container .player-info-detail.mobile{
+        display:block;
+        margin-bottom:10px
+    }
+    .playerpage-header-container .player-info-detail.mobile table{
+        background-color:#181a1d;
+        width:100%
+    }
+    .playerpage-header-container .player-info-detail.mobile table tr{
+        border-bottom:1px solid #494a4c
+    }
+    .playerpage-header-container .player-info-detail.mobile table tr td{
+        padding:10px;
+        text-transform:uppercase;
+        font-size:14px
+    }
+    .playerpage-header-container .player-info-detail.mobile table tr td .title{
+        color:#555;
+        margin-right:5px;
+        float:left
+    }
+    .playerpage-header-container .player-info-detail.mobile table tr td .info{
+        float:left
+    }
+    .playerpage-header-container .player-info-detail.mobile table tr .half-col{
+        width:50%;
+        border-right:1px solid #494a4c
+    }
+    .playerpage-header-container .player-info-detail.mobile table tr:last-child{
+        border-bottom:0px
+    }
+    .playerpage-header-container .player-info-detail.mobile table tr .team .team-logo-bio{
+        float:left;
+        background:#fff;
+        padding:4px 3px;
+        border-radius:5px;
+        width:auto;
+        height:33px
+    }
+    .playerpage-header-container .player-info-detail.mobile table tr .team .team-logo-bio img{
+        width:25px
+    }
+    .playerpage-header-container .player-info-detail.mobile table tr .team .team-name{
+        float:left;
+        color:#adadb2;
+        margin-top:8px;
+        margin-left:13px
+    }
+    .playerpage-header-container .player-info-detail.mobile .flag{
+        margin-right:5px
+    }
+}
+@media screen and (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5), (min-resolution: 96dpi), (min-resolution: 1.5dppx){
+    .playerpage-header-container img{
+        width:64px
+    }
+    .playerpage-header-container .team img{
+        width:32px
+    }
+    .playerpage-header-container .flag{
+        width:16px
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 767px){
+    .playerpage-header-container{
+        padding:10px 10px 0 10px
+    }
+    .playerpage-header-container .player-info-detail .team-name strong{
+        color:#fff
+    }
+    .playerpage-header-container .player-stats-container .player-stats{
+        margin-top:4px
+    }
+    .playerpage-header-container .player-stats-container .player-stats li span.value{
+        font-size:36px;
+        line-height:33px
+    }
+}
+#teamroster .team-roster-container{
+    display:none
+}
+#teamroster table .detail-cells td{
+    border-right:1px solid #dcdee0
+}
+.no-team-roster{
+    display:none
+}
+#scores{
+    position:relative;
+    margin:0 auto;
+    -moz-user-select:-moz-none;
+    -ms-user-select:none;
+    -webkit-user-select:none;
+    user-select:none
+}
+#scores .league-scores{
+    margin:0 auto;
+    width:100%;
+    height:100%;
+    position: relative;
+}
+#scores .league-scores:after {
+    display: block;
+    clear: both;
+    content: "";
+}
+#scores .league-scores .stats-game-scores .game-scores-list{
+    padding: 0;
+    margin: 0 -10px;
+    list-style: none;
+}
+#scores .league-scores .stats-game-scores .game-scores-list .game-score{
+    float:left;
+    margin-bottom:20px;
+    width: 50%;
+    padding: 0 10px;
+}
+#scores .league-scores .stats-game-scores .game-scores-list .game-score a:hover{
+    text-decoration:underline
+}
+#scores .league-scores .stats-game-scores .game-scores-list .game-score a:hover span{
+    text-decoration:underline
+}
+#scores .league-scores .stats-game-scores .game-scores-list .game-score:hover{
+    -webkit-box-shadow:none;
+    -moz-box-shadow:none;
+    box-shadow:none;
+    -webkit-transition-duration:none;
+    -moz-transition-duration:none;
+    transition-duration:none;
+    text-decoration:none
+}
+#scores .league-scores .stats-game-scores .game-scores-list .game-score .game-score-status{
+    background-color:#dcdee0;
+    color:#85878c;
+    font-weight:bold;
+    text-transform:uppercase;
+    padding:3px 8px;
+    min-height:20px;
+    font-size:12px;
+    padding:4px 8px;
+    text-transform:none;
+    line-height: 13px;
+}
+#scores .league-scores .stats-game-scores .game-scores-list .game-score .game-score-status .playoff-series{
+    display:inline-block;
+    text-transform:uppercase;
+    float:right
+}
+#scores .league-scores .stats-game-scores .game-scores-list .game-score .game-score-status.pre-game{
+    background-color:#dcdee0;
+    color:#85878c
+}
+#scores .league-scores .stats-game-scores .game-scores-list .game-score .game-score-status.live{
+    background-color:#b90a0a;
+    color:#fff
+}
+#scores .league-scores .stats-game-scores .game-scores-list .game-score .game-score-status.post-game{
+    background-color:#525358;
+    color:#fff
+}
+#scores .league-scores .stats-game-scores .game-scores-list .game-score .game-score-status .status{
+    display:inline-block;
+    float:left
+}
+#scores .league-scores .stats-game-scores .game-scores-list .game-score .game-score-status .game-station{
+    display:inline-block;
+    float:right
+}
+#scores .league-scores .stats-game-scores .game-scores-list .game-score .game-score-details .game-score-table{
+    margin:0;
+    width:100%
+}
+#scores .league-scores .stats-game-scores .game-scores-list .game-score .game-score-details .game-score-table .team-row{
+    background-color:#fff
+}
+#scores .league-scores .stats-game-scores .game-scores-list .game-score .game-score-details .game-score-table tr{
+    font-family:Arial,sans-serif;
+    font-size:12px;
+    color:#85878c;
+    text-transform:uppercase;
+    border-collapse:collapse;
+    border-spacing:0;
+    height:23px
+}
+#scores .league-scores .stats-game-scores .game-scores-list .game-score .game-score-details .game-score-table tr th{
+    text-align:center;
+    background-color:#dcdee0;
+    padding:0px
+}
+#scores .league-scores .stats-game-scores .game-scores-list .game-score .game-score-details .game-score-table tr td{
+    text-align:center;
+    border:1px solid #dcdee0;
+    width:10%;
+    padding:5px 5px;
+    min-width:0px
+}
+#scores .league-scores .stats-game-scores .game-scores-list .game-score .game-score-details .game-score-table tr td .logo{
+    float:left;
+    vertical-align:middle;
+    width:40px;
+    height:40px;
+    text-align: center;
+}
+#scores .league-scores .stats-game-scores .game-scores-list .game-score .game-score-details .game-score-table tr td .logo img{
+    max-width: 100%;
+    max-height: 100%;
+}
+#scores .league-scores .stats-game-scores .game-scores-list .game-score .game-score-details .game-score-table tr td .logo.logo-flags{
+    height:24px;
+    margin-top:4px
+}
+#scores .league-scores .stats-game-scores .game-scores-list .game-score .game-score-details .game-score-table tr td span{
+    display:inline-block
+}
+#scores .league-scores .stats-game-scores .game-scores-list .game-score .game-score-details .game-score-table tr td .nhl-strength{
+    display:inline-block;
+    font-weight:bold;
+    margin-left:5px;
+    line-height:1.2em
+}
+#scores .league-scores .stats-game-scores .game-scores-list .game-score .game-score-details .game-score-table tr td .team-info{
+    text-align:left
+}
+#scores .league-scores .stats-game-scores .game-scores-list .game-score .game-score-details .game-score-table tr td .team-info .team-acronym.no-record{
+    margin-top:8px
+}
+#scores .league-scores .stats-game-scores .game-scores-list .game-score .game-score-details .game-score-table tr td .team-info .team-acronym{
+    color:#323232;
+    font-size:11px;
+    font-weight:bold;
+    padding-top:2px;
+    padding-left:10px
+}
+#scores .league-scores .stats-game-scores .game-scores-list .game-score .game-score-details .game-score-table tr td .team-info .team-acronym .icon-possession-marker{
+    margin:0 0 2px 0
+}
+#scores .league-scores .stats-game-scores .game-scores-list .game-score .game-score-details .game-score-table tr td .team-info .team-season-info{
+    padding-left:50px;
+    color:#85878c;
+    display:block
+}
+#scores .league-scores .stats-game-scores .game-scores-list .game-score .game-score-details .game-score-table tr td .team-info .team-season-info span{
+    display:inline-block
+}
+#scores .league-scores .stats-game-scores .game-scores-list .game-score .game-score-details .game-score-table tr td .team-info .team-season-info .division-rank{
+    padding-left:0px;
+    text-transform:capitalize
+}
+#scores .league-scores .stats-game-scores .game-scores-list .game-score .game-score-details .game-score-table tr td.team{
+    padding:5px 5px;
+    text-align:left;
+    width:50%
+}
+#scores .league-scores .stats-game-scores .game-scores-list .game-score .game-score-details .game-score-table tr td.score-stats{
+    font-size:20px
+}
+#scores .league-scores .stats-game-scores .game-scores-list .game-score .game-score-details .game-score-table tr td.score-stats strong{
+    color:#323232
+}
+#scores .league-scores .stats-game-scores .game-scores-list .game-score .game-score-footer{
+    border:1px solid #dcdee0;
+    border-top:none;
+    color:#323232;
+    background-color:#f0f1f2;
+    padding:5px 10px;
+    font-size:13px;
+    text-transform:uppercase
+}
+#scores .league-scores .stats-game-scores .game-scores-list .game-score .game-score-footer .game-footer-box{
+    position:relative;
+    border-bottom:1px solid #dcdee0
+}
+#scores .league-scores .stats-game-scores .game-scores-list .game-score .game-score-footer .game-footer-box strong{
+    text-transform:capitalize
+}
+#scores .league-scores .stats-game-scores .game-scores-list .game-score .game-score-footer .game-ingame .mlb-bases{
+    left:0;
+    top:-8px
+}
+#scores .league-scores .stats-game-scores .game-scores-list .game-score .game-score-footer .game-ingame .pitcher,#scores .league-scores .stats-game-scores .game-scores-list .game-score .game-score-footer .game-ingame .batter{
+    padding:0 0 5px 45px
+}
+#scores .league-scores .stats-game-scores .game-scores-list .game-score .game-score-footer .game-ingame .pitcher:last-child,#scores .league-scores .stats-game-scores .game-scores-list .game-score .game-score-footer .game-ingame .batter:last-child{
+    padding-bottom:5px
+}
+#scores .league-scores .stats-game-scores .game-scores-list .game-score .game-score-footer .game-ingame .pitcher strong,#scores .league-scores .stats-game-scores .game-scores-list .game-score .game-score-footer .game-ingame .batter strong{
+    text-transform:capitalize
+}
+#scores .league-scores .stats-game-scores .game-scores-list .game-score .game-score-footer .game-ingame .pitcher strong a,#scores .league-scores .stats-game-scores .game-scores-list .game-score .game-score-footer .game-ingame .batter strong a{
+    display:inline-block;
+    color:#323232
+}
+#scores .league-scores .stats-game-scores .game-scores-list .game-score .game-score-footer .game-ingame .pitcher .stat-line,#scores .league-scores .stats-game-scores .game-scores-list .game-score .game-score-footer .game-ingame .batter .stat-line{
+    font-weight:normal
+}
+#scores .league-scores .stats-game-scores .game-scores-list .game-score .game-score-footer .game-ingame .footer-header{
+    padding-bottom:5px
+}
+#scores .league-scores .stats-game-scores .game-scores-list .game-score .game-score-footer .game-ingame-stats .stats{
+    padding:0 0 5px 0;
+    text-transform:capitalize
+}
+#scores .league-scores .stats-game-scores .game-scores-list .game-score .game-score-footer .game-ingame-stats .stats:last-child{
+    padding:0;
+    padding-bottom:5px
+}
+#scores .league-scores .stats-game-scores .game-scores-list .game-score .game-score-footer .game-ingame-stats .stats strong{
+    text-transform:capitalize
+}
+#scores .league-scores .stats-game-scores .game-scores-list .game-score .game-score-footer .game-ingame-stats .stats strong a{
+    display:inline-block;
+    color:#323232
+}
+#scores .league-scores .stats-game-scores .game-scores-list .game-score .game-score-footer .game-ingame-stats .footer-header{
+    padding:5px 0
+}
+#scores .league-scores .stats-game-scores .game-scores-list .game-score .game-score-footer .game-ingame-stats.pitchers .footer-header{
+    padding-bottom:5px
+}
+#scores .league-scores .stats-game-scores .game-scores-list .game-score .game-score-footer .footer-header{
+    color:#85878c;
+    font-weight:bold;
+    display:block
+}
+#scores .league-scores .stats-game-scores .game-scores-list .game-score .game-score-footer .game-highlights{
+    padding-top:7px;
+    padding-bottom:2px
+}
+#scores .league-scores .stats-game-scores .game-scores-list .game-score .game-score-footer .game-highlights span+span{
+    margin-left:10px
+}
+#scores .league-scores .stats-game-scores .game-scores-list .game-score .game-score-footer .game-highlights span a{
+    font-weight:bold;
+    color:#323232
+}
+#scores .league-scores .stats-game-scores .game-scores-list .game-score .game-score-footer .game-highlights a:before{
+    content:"";
+    background-image:url(//tsnimages.tsn.ca/ImageProvider/AssetImage?seoid=tsn-sprite);
+    background-repeat:no-repeat;
+    background-position:-278px -90px;
+    width:6px;
+    height:9px;
+    display:inline-block;
+    padding-left:4px
+}
+#scores .league-scores .stats-game-scores .game-scores-list .game-score .game-score-footer .game-highlights a:hover{
+    text-decoration:underline
+}
+#scores .league-scores .stats-game-scores .game-scores-list .game-score .game-score-footer .pre-game-info span+span{
+    margin-left:10px
+}
+#scores .league-scores .stats-game-scores .game-scores-list .game-score .game-score-footer .pre-game-info span a{
+    font-weight:bold;
+    color:#323232
+}
+#scores .league-scores .stats-game-scores .game-scores-list .game-score .game-score-footer .pre-game-info a:before{
+    content:"";
+    background-image:url(//tsnimages.tsn.ca/ImageProvider/AssetImage?seoid=tsn-sprite);
+    background-repeat:no-repeat;
+    background-position:-278px -90px;
+    width:6px;
+    height:9px;
+    display:inline-block;
+    padding-left:4px
+}
+#scores .league-scores .stats-game-scores .game-scores-list .game-score .game-score-footer .pre-game-info a:hover{
+    text-decoration:underline
+}
+#scores .no-games-found{
+    display:none;
+    text-align:center
+}
+#scores .no-games-today{
+    display:none;
+    text-align:center
+}
+@media screen and (max-width: 1000px){
+    #scores{
+        position:relative;
+        margin:0 auto
+    }
+    #scores .league-scores{
+        margin:0 auto;
+        height:100%
+    }
+    #scores .league-scores .stats-game-scores .game-scores-list{
+        float:none
+    }
+    #scores .league-scores .stats-game-scores .game-scores-list .game-score{
+        width:100%
+    }
+    #scores .league-scores .stats-game-scores .game-scores-list .game-score:nth-child(odd){
+        margin-right:0
+    }
+}
+@media screen and (max-width: 420px){
+    #scores .league-scores .stats-game-scores .game-scores-list .game-score{
+        width:100%
+    }
+    .content-wrapper .content .content-main{
+        overflow:visible
+    }
+}
+@media screen and (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5), (min-resolution: 96dpi), (min-resolution: 1.5dppx){
+    #scores .league-scores .stats-game-scores .game-scores-list .game-score .game-score-footer .game-highlights a:before,#scores .league-scores .stats-game-scores .game-scores-list .game-score .game-score-footer .pre-game-info a:before{
+        background-image:url(//tsnimages.tsn.ca/ImageProvider/AssetImage?seoid=tsn-sprite-2x) !important;
+        background-repeat:no-repeat;
+        background-size:800px 500px !important
+    }
+}
+.entry-content{
+    padding: 25px;
+}
+
+.page-tabs, .game-page-log {
+    margin: 0 auto;
+    max-width: 980px;
+    width: 100%;
+    background: #fff;
+}
+.page-tabs .page-nav, .game-page-log .page-nav {
+    vertical-align: middle;
+    line-height: 40px;
+    border-bottom: 1px solid #dcdee0;
+    padding: 0;
+}
+.page-tabs .page-nav>li:first-child, .game-page-log .page-nav>li:first-child {
+    padding-left: 0;
+}
+.page-tabs .page-nav>li, .game-page-log .page-nav>li {
+    font: 18px "Pill-Gothic-Bold",Arial,sans-serif;
+    display: inline-block;
+    margin: 0;
+    border-right: 1px solid #c5c5c9;
+    outline-color: transparent;
+    line-height: 16px;
+    padding: 0 10px 0 0;
+    margin: 0 7px 0 0;
+}
+.page-tabs .page-nav>li a, .game-page-log .page-nav>li a {
+    color: #adadb2;
+    outline-color: transparent;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.page-tabs .page-nav .active a, .game-page-log .page-nav .active a {
+    color: #323232;
+    font-weight: bold;
+}
+.content-main {
+    width: auto;
+    overflow: hidden;
+    position: relative;
+    min-height: 150px;
+}
+#fixture_scores{
+    min-height: 150px;
+}
+.stats-table {
+    position: relative;
+}
+.stats-table table{
+    border-collapse: unset;
+}
+.stats-table .stats-table-header {
+    color: #fff;
+    text-transform: uppercase;
+    background-color: #323232;
+    padding: 7px 10px;
+    border-bottom: 1px solid #fff;
+}
+.stats-table .stats-table-header h4 {
+    font-family: Arial,Helvetica,sans-serif;
+    color: #fffefe;
+    margin: 0;
+    font-size: 14px;
+}
+.stats-table .stats-table-container {
+    -moz-user-select: -moz-none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    position: relative;
+    width: auto;
+    -webkit-overflow-scrolling: auto;
+    margin-bottom: 20px;
+}
+.stats-table .stats-table-container table.stats-table-scrollable {
+    display: block;
+    position: static;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    font-family: Arial,Helvetica,sans-serif;
+    border: none;
+    width: 100%;
+}
+.stats-table .stats-table-container table.stats-table-scrollable thead tr th:first-child {
+    left: -152px;
+    width: 152px;
+    border-top: 0px;
+    height: 42px;
+}
+.stats-table .stats-table-container table.stats-table-scrollable tbody tr th.stick, 
+.stats-table .stats-table-container table.stats-table-scrollable thead tr th.stick {
+    position: absolute;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+}
+.stats-table .stats-table-container table.stats-table-scrollable thead tr th {
+    width: 102px;
+    text-transform: uppercase;
+    font-size: 11px;
+    padding: 10px 0px 10px 0px;
+}
+.stats-table .stats-table-container table.stats-table-scrollable tbody tr th, 
+.stats-table .stats-table-container table.stats-table-scrollable thead tr th {
+    text-align: center;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin: 0;
+    white-space: nowrap;
+    background: #dcdee0;
+}
+.stats-table table thead th {
+    min-width: 40px;
+}
+.stats-table table th {
+    -moz-user-select: -moz-none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    background: #dcdee0;
+    text-align: center;
+    margin: 0;
+    white-space: nowrap;
+    text-transform: uppercase;
+    font-size: 11px;
+    padding: 10px 0px 10px 0px;
+    font-family: Arial,Helvetica,sans-serif;
+}
+.stats-table table .detail-cells.odd {
+    background-color: #fff;
+}
+.stats-table table .detail-cells.even {
+    background-color: #f0f1f2;
+}
+#teamroster table .detail-cells td {
+    border-right: 1px solid #dcdee0;
+    padding: 5px 10px;
+    text-align: center;
+    white-space: nowrap;
+}
+.stats-table .stats-table-container table.stats-table-scrollable tbody tr.detail-cells td.stick, .stats-table .stats-table-container table.stats-table-scrollable thead tr.detail-cells td.stick {
+    padding: 5px 10px;
+}
+.stats-table .stats-table-container table.stats-table-scrollable tbody tr td.stick, .stats-table .stats-table-container table.stats-table-scrollable thead tr td.stick {
+    position: absolute;
+    border-left: 1px solid #dcdee0;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+}
+.stats-table table .detail-cells td:first-child {
+    text-align: left;
+    left: -152px;
+    width: 152px;
+}
+.stats-table table td {
+    border-right: 1px solid #dcdee0;
+    line-height: 20px;
+    font-size: 13px;
+    font-family: Arial,Helvetica,sans-serif;
+    padding: 4px;
+    min-width: 40px;
+}
+.stats-table-top {
+    position: relative;
+    width: 100%;
+}
+.stats-table .stats-table-top .stats-filter {
+    display: inline-block;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    color: #85878c;
+    border: 1px solid #dcdee0;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    height: 24px;
+    position: relative;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    vertical-align: top;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 13px;
+    padding: 0;
+}
+.stats-table .stats-table-top .stats-filter#sport_id{
+    max-width: 380px;
+    width: 100%;
+}
+.stats-table .stats-table-top input {
+    padding: 0 5px !important;
+    outline: none;
+    border: 0px;
+    height: 24px;
+}
+
+.paginationContainer .ng-table-pager {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+.paginationContainer .ng-table-pager ul {
+    display: inline-block;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+}
+.paginationContainer .ng-table-pager ul li {
+    float: left;
+}
+.disabled {
+    pointer-events: none;
+}
+.paginationContainer .ng-table-pager ul .first, 
+.paginationContainer .ng-table-pager ul .previous, 
+.paginationContainer .ng-table-pager ul .next, 
+.paginationContainer .ng-table-pager ul .last {
+    text-indent: -9999px;
+    overflow: hidden;
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    background-image: url(//tsnimages.tsn.ca/ImageProvider/AssetImage?seoid=tsn-sprite);
+    background-repeat: no-repeat;
+}
+.paginationContainer .ng-table-pager ul li a {
+    margin-right: 5px;
+    color: #b90a0a;
+    padding: 0px 5px 0px 5px;
+    float: left;
+    font-size: 14px;
+}
+.paginationContainer .ng-table-pager ul .disabled a span {
+    font-weight: bold;
+    color: #333;
+}
+.paginationContainer .ng-table-pager ul li span {
+    float: left;
+}
+.f-loading {
+    background-image: url('../image/ajax-loading.gif');
+    background-repeat: no-repeat;
+    background-size: 100px 100px;
+    background-position: 50% 50%;
+    background-color: #FFFFFF;
+    display: block;
+    height: 100%;
+    left: 0;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+}
+
+.slider-container {
+    display: block;
+    height: 70px;
+    -moz-user-select: -moz-none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+.slider-container .slider-calendar {
+    float: left;
+    white-space: nowrap;
+    width: 100%;
+    overflow: hidden;
+    background: #fff;
+}
+.slider-container .slider-calendar .slider-wrapper {
+    overflow: hidden;
+    position: relative;
+    background: #fff;
+    padding: 0 30px;
+}
+.slider-container .slider-calendar .slider-wrapper .stats-days-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: 70px;
+    background: #fff;
+    overflow: hidden;
+}
+.slider-container .slider-calendar .slider-wrapper .stats-days-list .stats-slider-date:first-child {
+    border-left: 1px solid #dcdee0;
+}
+.slider-container .slider-calendar .slider-wrapper .stats-days-list .stats-slider-date {
+    float: left;
+    width: 80px;
+    height: 70px;
+    background-color: #fff;
+    border: 1px solid #dcdee0;
+    border-left: none;
+    overflow: hidden;
+    position: relative;
+    color: #323232;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.slider-container .slider-calendar .slider-wrapper .stats-days-list .stats-slider-date.active {
+    background: #f0f1f2;
+}
+.slider-container .slider-calendar .slider-wrapper .stats-days-list .stats-slider-date .date {
+    text-align: center;
+    vertical-align: middle;
+    padding: 7px 0;
+    font-weight: bold;
+    font-size: 13px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.slider-container .slider-calendar .slider-wrapper .stats-days-list .stats-slider-date .date span:first-child {
+    display: block;
+    font-weight: bold;
+    font: 18px "Pill-Gothic-Bold",Arial,sans-serif;
+}
+.slider-container .slider-calendar .slider-wrapper .stats-days-list .stats-slider-date .date .games {
+    font-weight: normal;
+    font-size: 11px;
+    display: block;
+}
+
+.flex-direction-nav {
+    *height: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.flex-direction-nav a {
+    text-decoration: none;
+    display: block;
+    height: 70px;
+    width: 30px;
+    margin: -20px 0 0;
+    position: absolute;
+    top: 20px;
+    z-index: 10;
+    overflow: hidden;
+    opacity: 1;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.8);
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #B90A0A;
+}
+.flex-direction-nav a:before {
+    font-family: "flexslider-icon";
+    font-size: 28px;
+    display: inline-block;
+    content: '\f001';
+    color: #FFFFFF;
+    width: 30px;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 15px;
+    height: 55px;
+}
+.flex-direction-nav a.flex-next:before {
+    content: '\f002';
+}
+.flex-direction-nav a.flex-disabled{
+    background-color: #3E4045;
+}
+.flex-direction-nav .flex-prev {
+    left: 0;
+}
+.flex-direction-nav .flex-next {
+    right: 0;
+    text-align: right;
+}
+.flexslider:hover .flex-direction-nav .flex-prev {
+    opacity: 1;
+}
+.flexslider:hover .flex-direction-nav .flex-prev:hover {
+    opacity: 1;
+}
+.flexslider:hover .flex-direction-nav .flex-next {
+    opacity: 1;
+}
+.flexslider:hover .flex-direction-nav .flex-next:hover {
+    opacity: 1;
+}
+.slider-container{
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+article.article-feed {
+    border: none;
+    padding: 15px 0;
+    display: inline-block;
+    width: 100%;
+}
+article.promo-image-related .headline .media{
+    display: inline-block;
+    position: relative;
+    float: right;
+    max-width: 100px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+article.promo-image-related .headline .media img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: top;
+    display: block;
+    margin-top: -5px;
+}
+.feed.non-stack{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+}
+article .headline .article-content{
+    width: 86%;
+    float: left;
+}
+article .headline .article-content a h3{
+    vertical-align: middle;
+    line-height: 26px;
+    margin: 0;
+    color: #323232;
+}
+.ng-hide:not(.ng-hide-animate) {
+    display: none !important;
+}
+table.ng-table thead tr th.sortable{
+    cursor: pointer;
+}
+table.ng-table thead tr th.sortable.sort-desc{
+    color: #fff;
+    background: #66676e url(images/arrow-down.png) no-repeat 50% 85%;
+}
+table.ng-table thead tr th.sortable.sort-asc{
+    color: #fff;
+    background: #66676e url(images/arrow-up.png) no-repeat 50% 85%;
+}
+table.ng-table tbody tr td.sorted{
+    background-color: #dcdee0;
+    border-right: 0;
+}
+table.ng-table tr td, table.stats-table-full tr td {
+    text-align: center;
+}
+#team-injuries .detail-cells .profile-img {
+    padding: 0px;
+    vertical-align: bottom;
+    width: 61px;
+}
+#team-injuries .detail-cells .profile-img img {
+    vertical-align: bottom;
+    width: 61px;
+    height: 61px;
+}
+#team-injuries table .detail-cells td {
+    padding: 5px 10px;
+}
+#team-injuries table .detail-cells td.ng-binding{
+    text-align: center;
+}
+.down-icon{
+    background:#66676e url(images/arrow-down.png) no-repeat 50% 85% !important;
+}
+.up-icon{
+    background:#66676e url(images/arrow-up.png) no-repeat 50% 85% !important;
+}
+.disable-paging{
+    color:#333;
+}

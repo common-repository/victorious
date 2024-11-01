@@ -1,0 +1,1 @@
+<?phpinclude VICTORIOUS__PLUGIN_DIR_VIEW.'Elements/create_contest_normal.php';?>

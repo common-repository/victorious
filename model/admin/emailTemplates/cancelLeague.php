@@ -1,0 +1,1 @@
+<?php$message_subject = sprintf(esc_html(__("%s league %s was cancelled",'victorious')),$siteTitle,str_replace('&#39;', "'", $emailInfo['league_name']) );$message_body = sprintf(esc_html(__('We are terribly sorry, but your league called %s was cancelled','victorious')),$emailInfo['league_name']);?>
